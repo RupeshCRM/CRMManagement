@@ -1,0 +1,445 @@
+﻿
+<html>
+<head>
+    <title>Landing Page</title>
+
+    <link href="~/Content/CustomeCSS/demo.css" rel="stylesheet" />
+    <link href="~/Content/CustomeCSS/style.css" rel="stylesheet" />
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="CustomeCSS.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,400,500,600" rel="stylesheet" type="text/css" />
+<link href="~/Content/CustomeCSS/custom.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+</head>
+<body>
+
+    <main class="cd__main">
+
+        <div class="sidebar close">
+            <div class="logo-details">
+
+                <i class='bx bx-grid-alt'></i>
+            
+                <span class="logo_name"><img src="~/Images/EzLogo1.png" width="100%"></span>
+
+            </div>
+            <hr>
+            <ul class="nav-links">
+                <li>
+                    <a href="#">
+                        <i class='bx bx-grid-alt'></i>
+                        <span class="link_name">Dashboard</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Category</a></li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i class='bx bx-collection'></i>
+                            <span class="link_name">Category</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Category</a></li>
+                        <li><a href="#">HTML & CSS</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                        <li><a href="#">PHP & MySQL</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i class='bx bx-book-alt'></i>
+                            <span class="link_name">Posts</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Posts</a></li>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Login Form</a></li>
+                        <li><a href="#">Card Design</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-pie-chart-alt-2'></i>
+                        <span class="link_name">Analytics</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Analytics</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-line-chart'></i>
+                        <span class="link_name">Chart</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Chart</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i class='bx bx-plug'></i>
+                            <span class="link_name">Plugins</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Plugins</a></li>
+                        <li><a href="#">UI Face</a></li>
+                        <li><a href="#">Pigments</a></li>
+                        <li><a href="#">Box Icons</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-compass'></i>
+                        <span class="link_name">Explore</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Explore</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-history'></i>
+                        <span class="link_name">History</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">History</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-cog'></i>
+                        <span class="link_name">Setting</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Setting</a></li>
+                    </ul>
+                </li>
+                <li>
+
+                </li>
+            </ul>
+        </div>
+        <section class="home-section" style="background:#f0f2f5">
+            <div class="home-content">
+                <i class='bx bx-menu'></i>
+
+            </div>
+            <hr>
+
+            <div class="main-section">
+                <div class="dashbord">
+                    <div class="icon-section">
+                        <i class="fa fa-users" aria-hidden="true"></i><br>
+                        <small>Users</small>
+                        <p>256</p>
+                    </div>
+                    <div class="detail-section">
+                        <a href="#">More Info </a>
+                    </div>
+                </div>
+                <div class="dashbord dashbord-green">
+                    <div class="icon-section">
+                        <i class="fa fa-money" aria-hidden="true"></i><br>
+                        <small>Account</small>
+                        <p>$ 256</p>
+                    </div>
+                    <div class="detail-section">
+                        <a href="#">More Info </a>
+                    </div>
+                </div>
+                <div class="dashbord dashbord-orange">
+                    <div class="icon-section">
+                        <i class="fa fa-bell" aria-hidden="true"></i><br>
+                        <small>Alert</small>
+                        <p>9 New</p>
+                    </div>
+                    <div class="detail-section">
+                        <a href="#">More Info </a>
+                    </div>
+                </div>
+                <div class="dashbord dashbord-blue">
+                    <div class="icon-section">
+                        <i class="fa fa-tasks" aria-hidden="true"></i><br>
+                        <small>Task</small>
+                        <p>8</p>
+                    </div>
+                    <div class="detail-section">
+                        <a href="#">More Info </a>
+                    </div>
+                </div>
+                <div class="dashbord dashbord-red">
+                    <div class="icon-section">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i><br>
+                        <small>Cart</small>
+                        <p>$ 24</p>
+                    </div>
+                    <div class="detail-section">
+                        <a href="#">More Info </a>
+                    </div>
+                </div>
+                <div class="dashbord dashbord-skyblue">
+                    <div class="icon-section">
+                        <i class="fa fa-comments" aria-hidden="true"></i><br>
+                        <small>Mentions</small>
+                        <p>96</p>
+                    </div>
+                    <div class="detail-section">
+                        <a href="#">More Info </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row" style="margin:18px">
+                <div class="col-md-6">
+                    <div class="card border-info ">
+                        <div class="card-header">Production chart 1</div>
+                        <div class="card-body">
+                            <canvas id="piechart" style="width:100%;max-width:600px"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-info">
+                        <div class="card-header">Production chart 2</div>
+                        <div class="card-body">
+                            <canvas id="pieChart2" style="width:100%;max-width:600px"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="margin:18px">
+                <div class="col-md-6">
+                    <div class="card border-info ">
+                        <div class="card-header">Production chart 3</div>
+                        <div class="card-body">
+                            <canvas id="barChart" style="width:100%;max-width:600px"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-info">
+                        <div class="card-header">Production chart 4</div>
+                        <div class="card-body">
+                            <canvas id="barChart2" style="width:100%;max-width:600px"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="margin:18px">
+                <div class="col-md-6">
+                    <div class="card border-info ">
+                        <div class="card-header">Production chart 5</div>
+                        <div class="card-body">
+                            <canvas id="LineChart" style="width:100%;max-width:600px"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-info">
+                        <div class="card-header">Production chart 6</div>
+                        <div class="card-body">
+                            <canvas id="barChart3" style="width:100%;max-width:600px"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+    <footer class="cd__credit">Powered By EZWare Technologies LLC - Copyright&copy;2024 </footer>
+
+
+  
+    <script src="~/Scripts/CustomScript/script.js"></script>
+
+
+    <script>
+    const xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+        const yValues = [55, 49, 44, 24, 15];
+        const barColors = [
+            "#b91d47",
+            "#00aba9",
+            "#2b5797",
+            "#e8c3b9",
+            "#1e7145"
+        ];
+
+        new Chart("piechart", {
+            type: "doughnut",
+            data: {
+                labels: xValues,
+                datasets: [{
+                    backgroundColor: barColors,
+                    data: yValues
+                }]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: "Production 2024"
+                }
+            }
+        });
+
+        const xValues1 = ["Italy", "France", "Spain", "USA", "Argentina"];
+        const yValues1 = [55, 49, 44, 24, 15];
+        const barColors1 = [
+            "#b91d47",
+            "#00aba9",
+            "#2b5797",
+            "#e8c3b9",
+            "#1e7145"
+        ];
+
+        new Chart("pieChart2", {
+            type: "pie",
+
+            data: {
+                labels: xValues1,
+                datasets: [{
+                    backgroundColor: barColors1,
+                    data: yValues1
+                }]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: "Production 2024"
+                }
+            }
+        });
+
+        const xValues2 = ["Italy", "France", "Spain", "USA", "Argentina"];
+        const yValues2 = [55, 49, 44, 24, 15];
+        const barColors2 = ["#b91d47",
+            "#00aba9",
+            "#2b5797",
+            "#e8c3b9",
+            "#1e7145"];
+
+        new Chart("barChart", {
+            type: "bar",
+            data: {
+                labels: xValues2,
+                datasets: [{
+                    backgroundColor: barColors2,
+                    data: yValues2
+                }]
+            },
+            options: {
+                legend: { display: false },
+                title: {
+                    display: true,
+                    text: "World Wine Production 2018"
+                }
+            }
+        });
+
+        var xValues3 = ["Italy", "France", "Spain", "USA", "Argentina"];
+        var yValues3 = [55, 49, 44, 24, 15];
+        var barColors3 = ["#b91d47",
+            "#00aba9",
+            "#2b5797",
+            "#e8c3b9",
+            "#1e7145"];
+
+        new Chart("barChart2", {
+            type: "horizontalBar",
+            data: {
+                labels: xValues3,
+                datasets: [{
+                    backgroundColor: barColors3,
+                    data: yValues3
+                }]
+            },
+            options: {
+                legend: { display: false },
+                title: {
+                    display: true,
+                    text: "Production 2024"
+                },
+                scales: {
+                    xAxes: [{ ticks: { min: 10, max: 60 } }]
+                }
+            }
+        });
+
+        const xValues4 = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150];
+        const yValues4 = [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15];
+
+        new Chart("LineChart", {
+            type: "line",
+            data: {
+                labels: xValues4,
+                datasets: [{
+                    fill: false,
+                    lineTension: 0,
+                    backgroundColor: "rgba(0,0,255,1.0)",
+                    borderColor: "rgba(0,0,255,0.1)",
+                    data: yValues4
+                }]
+            },
+            options: {
+                legend: { display: false },
+                scales: {
+                    yAxes: [{ ticks: { min: 6, max: 16 } }],
+                },
+                title: {
+                    display: true,
+                    text: "Production 2024"
+                }
+            }
+        });
+
+
+        const xValues5 = ["Italy", "France", "Spain", "USA", "Argentina"];
+        const yValues5 = [55, -49, 44, -24, -115];
+        const barColors5 = ["#b91d47",
+            "#00aba9",
+            "#2b5797",
+            "#e8c3b9",
+            "#1e7145"];
+
+        new Chart("barChart3", {
+            type: "bar",
+            data: {
+                labels: xValues5,
+                datasets: [{
+                    backgroundColor: barColors5,
+                    data: yValues5
+                }]
+            },
+            options: {
+                legend: { display: false },
+                title: {
+                    display: true,
+                    text: "Production 2024"
+                },
+                scales: {
+                    xAxes: [{ ticks: { min: -100, max: 100, stepSize: 10 } }]
+                }
+            }
+        });</script>
+</body>
+</html>

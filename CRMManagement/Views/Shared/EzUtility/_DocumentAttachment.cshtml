@@ -1,0 +1,239 @@
+﻿@model CRM.ModelsVM.EzUtility.clsDocumentAttachmentVM
+@{
+
+    Layout = "";
+    //var userName = Model.userRequest.UserName.ToString();
+    //var SectionId = Model.userRequest.SectionId;
+    //var oprType = Model.oprType;
+
+    var userName = (string)Session["UserName"];
+    var companyCode = (string)Session["CompanyCode"];
+    var SectionId = @ViewBag.SectionId;
+  
+
+}
+<div class="container-fluid">
+    <div class="row">
+        @*<div class="col-md-3">
+            <div class="card card-cyan card-outline">
+                <div class="card-body box-profile">
+
+                </div>
+            </div>
+        </div>*@
+
+        <div Class="col-md-12">
+
+            <div Class="card">
+
+                <div Class="card-header p-2">
+                    <ul Class="nav nav-pills">
+                        <li Class="nav-item"><a class="nav-link active" href="#AttachmentInformation" data-toggle="tab">Document Information</a></li>
+                    </ul>
+                </div>
+
+                <div Class="card-body">
+                    <div Class="tab-content">
+                        <div Class="active tab-pane" id="AttachmentInformation">
+                            <div Class="post">
+                                <form Class="form-horizontal">
+                                    <div Class="form-group row">
+                                        <label for="inputName" class="col-sm-2 col-form-label">Code</label>
+                                        <div Class="input-group col-sm-4">
+                                            @Html.TextBoxFor(Model => Model.DocumentAttachment.Code, new { @class = "form-control form-control-border contactNumber", @placeholder = "Code", @value = Model.DocumentAttachment.Code })
+                                        </div>
+                                    </div>
+                                    <div Class="form-group row">
+                                        <label for="inputName" class="col-sm-2 col-form-label">Reference#</label>
+                                        <div Class="input-group col-sm-4">
+                                            @*@Html.TextBoxFor(Model => Model.DocumentAttachment.RefNo, new { @class = "form-control form-control-border contactNumber", @placeholder = "RefNo", @value = Model.DocumentAttachment.RefNo })*@
+                                            @Html.DropDownListFor(Model => Model.DocumentAttachment.RefNo, new SelectList(Model.DocumentSourceList, "Value", "Text", Model.DocumentAttachment.RefNo), "Select an option", new { @class = "form-control form-control-border", @style = "width: 100%;", @value = Model.DocumentAttachment.RefNo })
+                                        </div>
+                                    </div>
+                                    <div Class="form-group row">
+                                        <label for="inputExperience" class="col-sm-2 col-form-label">Document Type</label>
+                                        <div Class="col-sm-4">
+                                            @Html.DropDownListFor(Model => Model.DocumentAttachment.DocCode, new SelectList(Model.DocumentList, "Value", "Text", Model.DocumentAttachment.DocCode), "Select an option", new { @class = "form-control form-control-border", @style = "width: 100%;", @value = Model.DocumentAttachment.Code })
+                                        </div>
+                                    </div>
+                                    <div Class="form-group row">
+                                        <label for="inputName" class="col-sm-2 col-form-label">Document Description</label>
+                                        <div Class="input-group col-sm-4">
+                                            @Html.TextAreaFor(Model => Model.DocumentAttachment.Specification, new { @class = "form-control form-control-border contactNumber", @placeholder = "Specification", @value = Model.DocumentAttachment.Specification })
+                                        </div>
+                                    </div>
+                                    <div Class="form-group row">
+                                        <label for="inputName" class="col-sm-2 col-form-label">Issue Date</label>
+                                        <div Class="col-sm-3">
+                                            @Html.EditorFor(model => model.DocumentAttachment.IssueDate, new { htmlAttributes = new { @class = "form-control form-control-border", @type = "date", @Value = Model.DocumentAttachment.IssueDate.ToString("yyyy-MM-dd") } })
+                                        </div>
+                                    </div>
+
+                                    <div Class="form-group row">
+                                        <label for="inputName" class="col-sm-2 col-form-label">Expiry Date</label>
+                                        <div Class="col-sm-3">
+                                            @Html.EditorFor(model => model.DocumentAttachment.ExpiryDate, new { htmlAttributes = new { @class = "form-control form-control-border", @type = "date", @Value = Model.DocumentAttachment.ExpiryDate.ToString("yyyy-MM-dd") } })
+                                        </div>
+                                    </div>
+
+                                    <div Class="form-group row">
+                                        <label for="inputName" class="col-sm-2 col-form-label"></label>
+                                        <div Class="col-sm-6">
+                                            <input type="file" name="file" id="fileAttachment" />
+                                            <input type="button" value="Save and Upload" onclick="AttachFile()" />
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr />
+                    <div Class="col-sm-12">
+                        @Html.Partial("~/Views/Shared/CommonButtons.cshtml")
+                        @Html.ActionLink("Back to List", "Index", new { CmpyCode = @companyCode, Id = @SectionId, userName = @userName })
+
+                    </div>
+                </div>
+
+                @*Accordian Body*@
+
+            </div>
+        </div>
+    </div>
+</div>
+@*<div Class="col-sm-12">
+        <div Class="card">
+            <div Class="card-header">
+                <h3 Class="card-title">Uploaded Document List</h3>
+            </div>
+            <div Class="card-body p-0">
+                <table Class="table">
+                    <thead>
+                        <tr>
+                            <th style="width: 10px">#</th>
+                            <th> Sno</th>
+                            <th> Document Description</th>
+                            <th> Issue Date</th>
+                            <th> Expiry Date</th>
+                            <th> Attachment</th>
+                            <th> Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.DocumentAttachmentList)
+                        {
+                            <tr>
+                                <td></td>
+                                <td>@item.DocCode</td>
+                                <td>@item.Specification</td>
+                                <td>@item.IssueDate</td>
+                                <td>@item.ExpiryDate</td>
+                                <td>Download</td>
+                                <td>Delete</td>
+                            </tr>
+
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>*@
+
+
+
+
+
+
+
+@*@using (Html.BeginForm("DocumentAttachment", "FileAttachment", FormMethod.Post, new { enctype = "multipart/form-data", id = "uploadAttachment" }))
+    {
+        <div Class="card-header">
+            <div Class="col-md-9">
+                @Html.HiddenFor(model => model.DocumentAttachment.CmpyCode)
+                @Html.HiddenFor(model => model.DocumentAttachment.RefNo)
+                <div Class="form-group row">
+                    <label for="inputName2" class="col-sm-3 col-form-label">Document Type</label>
+                    <div Class="col-sm-6">
+                        @Html.DropDownList("DocumentAttachmentMaster.DocCode", new SelectList(Model.DocumentList, "Value", "Text", ""), "Select an option", new { @class = "form-control form-control-border", @style = "width: 100%;" })
+                    </div>
+                </div>
+                <div Class="form-group row">
+                    <label for="inputName" class="col-sm-3 col-form-label">Document Description</label>
+                    <div Class="col-sm-6">
+                        @Html.TextAreaFor(model => model.DocumentAttachment.DocDescription, new { htmlAttributes = new { @class = "form-control form-control-border", @Value = Model.DocumentAttachment.DocDescription } })
+                    </div>
+                </div>
+                <div Class="form-group row">
+                    <label for="inputName" class="col-sm-3 col-form-label">Specification</label>
+                    <div Class="col-sm-6">
+                        @Html.TextAreaFor(model => model.DocumentAttachment.Specification, new { htmlAttributes = new { @class = "form-control form-control-border", @Value = Model.DocumentAttachment.Specification } })
+                    </div>
+                </div>
+                <div Class="form-group row">
+                    <label for="inputName" class="col-sm-3 col-form-label">Issue Date</label>
+                    <div Class="col-sm-3">
+                        @Html.EditorFor(model => model.DocumentAttachment.IssueDate, new { htmlAttributes = new { @class = "form-control form-control-border", @type = "date", @Value = DateTime.Now.ToString("yyyy-MM-dd") } })
+                    </div>
+                </div>
+
+                <div Class="form-group row">
+                    <label for="inputName" class="col-sm-3 col-form-label">Expiry Date</label>
+                    <div Class="col-sm-3">
+                        @Html.EditorFor(model => model.DocumentAttachment.ExpiryDate, new { htmlAttributes = new { @class = "form-control form-control-border", @type = "date", @Value = DateTime.Now.ToString("yyyy-MM-dd") } })
+                    </div>
+                </div>
+
+                <div Class="form-group row">
+                    <label for="inputName" class="col-sm-3 col-form-label"></label>
+                    <div Class="col-sm-6">
+                        <input type="file" name="file" id="fileAttachment" />
+                        <input type="button" value="Upload" onclick="AttachFile()" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    }*@
+
+
+@*<div Class="col-sm-12">
+        <div Class="card">
+            <div Class="card-header">
+                <h3 Class="card-title">Uploaded Document List</h3>
+            </div>
+            <div Class="card-body p-0">
+                <table Class="table">
+                    <thead>
+                        <tr>
+                            <th style="width: 10px">#</th>
+                            <th> Sno</th>
+                            <th> Document Description</th>
+                            <th> Issue Date</th>
+                            <th> Expiry Date</th>
+                            <th> Attachment</th>
+                            <th> Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.DocumentAttachmentList)
+                        {
+                            <tr>
+                                <td></td>
+                                <td>@item.DocCode</td>
+                                <td>@item.Specification</td>
+                                <td>@item.IssueDate</td>
+                                <td>@item.ExpiryDate</td>
+                                <td>Download</td>
+                                <td>Delete</td>
+                            </tr>
+
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>*@
+
+

@@ -1,0 +1,313 @@
+﻿
+@model CRM.ModelsVM.CRM.clsCRMUserMasterVM
+
+@{
+
+    Layout = "";
+    //var userName = Model.userRequest.UserName.ToString();
+    //var SectionId = Model.userRequest.SectionId;
+    //var oprType = Model.oprType;
+
+    var userName = (String)Session["UserName"];
+    var companyCode = (String)Session["CompanyCode"];
+    var FYear = (String)Session["FYear"];
+    var SectionId = @ViewBag.SectionId;
+    var oprType = @ViewBag.oprType;
+
+
+}
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card card-cyan card-outline">
+                <div class="card-body box-profile">
+                    @*<div class="text-center">
+                            <img class="profile-user-img img-fluid img-circle" id="imgPreview" src="~/Content/dist/img/user4-128x128.jpg" alt="User profile picture">
+                        </div>*@
+                    <div class="text-center">
+                        <img class="profile-user-img img-fluid img-circle" id="imgPreview" alt="User profile picture" src="@Url.Action("DownloadFile", new { EmployeeID = Model.CRMUserMaster.EmployeeID})" alt="@Model.CRMUserMaster.FirstName" width="64" height="64" />
+                    </div>
+
+                    <h3 class="profile-username text-center">@Model.CRMUserMaster.Salutation @Model.CRMUserMaster.FirstName @Model.CRMUserMaster.LastName </h3>
+                    <p class="text-muted text-center">@Model.CRMUserMaster.Notes</p>
+                    <ul class="list-group list-group-unbordered mb-3">
+                        <li class="list-group-item">
+                            <b>Followers</b> <a class="float-right">1,322</a>
+                        </li>
+                        <li class="list-group-item">
+                            <b>Following</b> <a class="float-right">543</a>
+                        </li>
+                        <li class="list-group-item">
+                            <b>Friends</b> <a class="float-right">13,287</a>
+                        </li>
+                    </ul>
+
+                    <div> @Html.Partial("~/Views/Shared/EzUtility/_DocumentUpload.cshtml")</div>
+                    @*<a href = "#" Class="btn btn-primary btn-block"><b>Follow</b></a>*@
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div Class="col-md-9">
+            <div Class="card">
+                <div Class="card-header p-2">
+                    <ul Class="nav nav-pills">
+                        <li Class="nav-item"><a class="nav-link active" href="#UserBasicInformation1" data-toggle="tab">User Basic Information</a></li>
+                        <li Class="nav-item"><a class="nav-link" href="#ContactInformation" data-toggle="tab">Contact Information</a></li>
+                        <li Class="nav-item"><a class="nav-link" href="#Target" data-toggle="tab">Target Detail</a></li>
+                        <li Class="nav-item"><a class="nav-link" href="#DocumentAttachment" data-toggle="tab">Document Attachment</a></li>
+                        <li Class="nav-item"><a class="nav-link" href="#Notes" data-toggle="tab">Notes</a></li>
+                    </ul>
+                </div>
+                <div Class="card-body">
+                    <div Class="tab-content">
+
+                        <div Class="active tab-pane" id="UserBasicInformation1">
+
+                            <div Class="post">
+                                <form Class="form-horizontal">
+                                    <div Class="form-group row">
+                                        <label for="inputName" class="col-sm-2 col-form-label">Entry Reference</label>
+                                        <div Class="col-sm-4">
+                                            @Html.TextBoxFor(Model => Model.CRMUserMaster.Code, new { @class = "form-control form-control-border", @placeholder = "Entry Reference", @value = Model.CRMUserMaster.Code,@Disabled=true })
+                                        </div>
+                                    </div>
+                                    <div Class="form-group row">
+                                        <label for="inputName" class="col-sm-2 col-form-label">Employee ID</label>
+                                        <div Class="col-sm-4">
+                                            @Html.TextBoxFor(Model => Model.CRMUserMaster.EmployeeID, new { @class = "form-control form-control-border", @placeholder = "Employee ID", @value = Model.CRMUserMaster.EmployeeID })
+                                        </div>
+                                    </div>
+                                    <div Class="form-group row">
+                                        <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+                                        <div class="col-sm-1">
+
+                                            @Html.DropDownListFor(model => model.CRMUserMaster.Salutation, new SelectList(new List<SelectListItem>
+                                       {
+                                           new SelectListItem { Text = "Mr", Value = "Mr" },
+                                           new SelectListItem { Text = "Miss", Value = "Miss" },
+                                           new SelectListItem { Text = "Other", Value = "Other" }
+                                        }, "Value", "Text"), "Select", new { @class = "form-control form-control-border", @style = "width: 100%;" })
+
+                                        </div>
+                                        <div Class="col-sm-3">
+                                            @Html.TextBoxFor(Model => Model.CRMUserMaster.FirstName, new { @class = "form-control form-control-border", @placeholder = "First Name", @value = Model.CRMUserMaster.FirstName })
+                                        </div>
+                                        <div Class="col-sm-3">
+                                            @Html.TextBoxFor(Model => Model.CRMUserMaster.LastName, new { @class = "form-control form-control-border", @placeholder = "Last Name", @value = Model.CRMUserMaster.LastName })
+                                        </div>
+                                        <div Class="col-sm-3">
+                                            @Html.TextBoxFor(Model => Model.CRMUserMaster.MiddleName, new { @class = "form-control form-control-border", @placeholder = "Middle Name  Optional", @value = Model.CRMUserMaster.MiddleName })
+                                        </div>
+                                    </div>
+                                    <div Class="form-group row">
+                                        <label for="inputName2" class="col-sm-2 col-form-label">Category</label>
+                                        <div Class="col-sm-4">
+                                            @Html.DropDownListFor(Model => Model.CRMUserMaster.CategoryID, new SelectList(Model.CategoryList, "Value", "Text", Model.CRMUserMaster.CategoryID), "Select an option", new { @class = "form-control form-control-border", @style = "width: 100%;" })
+                                        </div>
+                                    </div>
+                                    <div Class="form-group row">
+                                        <label for="inputExperience" class="col-sm-2 col-form-label">Reporting to </label>
+                                        <div Class="col-sm-4">
+                                            @*@Html.TextBoxFor(Model => Model.CRMUserMaster.ReportingTo, new { @class = "form-control form-control-border", @placeholder = "Reporting to ", @value = Model.CRMUserMaster.ReportingTo })*@
+                                            @Html.DropDownListFor(Model => Model.CRMUserMaster.ReportingTo, new SelectList(Model.EmployeeList, "Value", "Text", Model.CRMUserMaster.ReportingTo), "Select an option", new { @class = "form-control form-control-border", @style = "width: 100%;" })
+                                        </div>
+                                    </div>
+                                    <div Class="form-group row">
+                                        <label for="inputName" class="col-sm-2 col-form-label">User Name</label>
+                                        <div Class="col-sm-4">
+                                            @Html.TextBoxFor(Model => Model.CRMUserMaster.UserName, new { @class = "form-control form-control-border", @placeholder = "User Name", @value = Model.CRMUserMaster.UserName })
+                                        </div>
+                                    </div>
+                                    <div Class="form-group row">
+                                        <label for="inputName" class="col-sm-2 col-form-label">Password</label>
+                                        <div Class="col-sm-4">
+                                            @Html.PasswordFor(Model => Model.CRMUserMaster.Password, new { @class = "form-control form-control-border", @placeholder = "Password", @value = Model.CRMUserMaster.Password })
+                                        </div>
+                                    </div>
+
+
+                                </form>
+                            </div>
+
+                        </div>
+
+                        <div Class="tab-pane" id="ContactInformation">
+                            <div Class="post">
+                                <form Class="form-horizontal">
+                                    <div Class="form-group row">
+                                        <label for="inputName" class="col-sm-2 col-form-label">Mobile</label>
+                                        <div Class="input-group col-sm-4">
+
+                                            @Html.TextBoxFor(Model => Model.CRMUserMaster.Mobile, new { @class = "form-control form-control-border contactNumber", @placeholder = "Mobile", @value = Model.CRMUserMaster.Mobile })
+                                        </div>
+                                    </div>
+                                    <div Class="form-group row">
+                                        <label for="inputName" class="col-sm-2 col-form-label">Email Id</label>
+                                        <div Class="input-group col-sm-4">
+                                            @Html.TextBoxFor(Model => Model.CRMUserMaster.EmailID, new { @class = "form-control form-control-border", @placeholder = "Email Id", @value = Model.CRMUserMaster.EmailID })
+                                        </div>
+                                    </div>
+                                    <div Class="form-group row">
+                                        <label for="inputExperience" class="col-sm-2 col-form-label">Street</label>
+                                        <div Class="col-sm-4">
+                                            @Html.TextBoxFor(Model => Model.CRMUserMaster.Street, new { @class = "form-control form-control-border", @placeholder = "Street", @value = Model.CRMUserMaster.Street })
+                                        </div>
+                                    </div>
+                                    <div Class="form-group row">
+                                        <label for="inputExperience" class="col-sm-2 col-form-label">City</label>
+                                        <div Class="col-sm-4">
+                                            @*form-control form-control-border*@
+                                            @Html.DropDownListFor(Model => Model.CRMUserMaster.City, new SelectList(Model.CityList, "Value", "Text", Model.CRMUserMaster.City), "Select an option", new { @class = "form-control form-control-border", @style = "width: 100%;", @value = Model.CRMUserMaster.City })
+
+                                            @*@Html.TextBoxFor(Model => Model.CRMUserMaster.City, new { @class = "form-control form-control-border", @placeholder = "City", @value = Model.CRMUserMaster.City })*@
+                                        </div>
+                                    </div>
+                                    <div Class="form-group row">
+                                        <label for="inputExperience" class="col-sm-2 col-form-label">State</label>
+                                        <div Class="col-sm-4">
+                                            @Html.DropDownListFor(Model => Model.CRMUserMaster.State, new SelectList(Model.StateList, "Value", "Text", Model.CRMUserMaster.State), "Select an option", new { @class = "form-control form-control-border", @style = "width: 100%;" })
+                                            @*@Html.TextBoxFor(Model => Model.CRMUserMaster.State, new { @class = "form-control form-control-border", @placeholder = "State", @value = Model.CRMUserMaster.State })*@
+                                        </div>
+                                    </div>
+                                    <div Class="form-group row">
+                                        <label for="inputExperience" class="col-sm-2 col-form-label">Country</label>
+                                        <div Class="col-sm-4">
+                                            @Html.DropDownListFor(Model => Model.CRMUserMaster.Country, new SelectList(Model.CountryList, "Value", "Text", Model.CRMUserMaster.Country), "Select an option", new { @class = "form-control form-control-border", @style = "width: 100%;" })
+                                            @*@Html.TextBoxFor(Model => Model.CRMUserMaster.Country, new { @class = "form-control form-control-border", @placeholder = "Country", @value = Model.CRMUserMaster.Country })*@
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div Class="tab-pane" id="Target">
+                            <div Class="post">
+                                <form Class="form-horizontal">
+                                    <div Class="form-group row">
+                                        <label for="inputName" class="col-sm-2 col-form-label">Target Type</label>
+                                        <div Class="input-group col-sm-4">
+                                            @foreach (var option in Model.TargetTypeList)
+                                            {
+                                                <div class="form-check form-check-inline">
+                                                    @Html.RadioButtonFor(model => model.CRMUserMaster.TargetType, option.Value == Model.CRMUserMaster.TargetType, new { @class = "form-check-input" })
+                                                    <label class="form-check-label" for="inlineRadio1">@option.Text</label>
+                                                </div>
+                                            }
+
+                                        </div>
+                                        <label for="inputName" class="col-sm-2 col-form-label">Target Value</label>
+                                        <div Class="input-group col-sm-4">
+                                            @Html.TextBoxFor(Model => Model.CRMUserMaster.TargetValue, new { @class = "form-control form-control-border", @placeholder = "Target Value", @value = Model.CRMUserMaster.TargetValue })
+                                        </div>
+                                    </div>
+                                    <div Class="form-group row">
+                                        <label for="inputExperience" class="col-sm-2 col-form-label">Target Calculated Type</label>
+                                        <div Class="col-sm-4">
+                                            @foreach (var option in Model.TargetCalculatedTypeList)
+                                            {
+                                                <div class="form-check form-check-inline">
+                                                    @Html.RadioButtonFor(model => model.CRMUserMaster.TargetCalculatedType, option.Value == Model.CRMUserMaster.TargetCalculatedType, new { @class = "form-check-input" })
+                                                    <label class="form-check-label" for="inlineRadio1">@option.Text</label>
+                                                </div>
+                                            }
+                                            @*@Html.TextBoxFor(Model => Model.CRMUserMaster.TargetCalculated, new { @class = "form-control form-control-border", @placeholder = "Target Calculated", @value = Model.CRMUserMaster.TargetCalculated })*@
+                                        </div>
+                                        <label for="inputExperience" class="col-sm-2 col-form-label">Target Calculated Amount</label>
+                                        <div Class="col-sm-4">
+                                            @Html.TextBoxFor(Model => Model.CRMUserMaster.TargetCalculated, new { @class = "form-control form-control-border", @placeholder = "Target Calculated", @value = Model.CRMUserMaster.TargetCalculated })
+                                        </div>
+                                    </div>
+                                    <div Class="form-group row">
+                                        <label for="inputExperience" class="col-sm-2 col-form-label">Commission Type: </label>
+                                        <div Class="col-sm-4">
+                                            <fieldset>
+                                                @foreach (var Option in Model.CRMCommissionTypeList)
+                                                {
+                                                    <label>
+                                                        @Html.RadioButtonFor(Model => Model.CRMUserMaster.CommissionType, Option.Value, Option.Value == Model.CRMUserMaster.CommissionType) @Option.Text
+                                                        @*//, strVar == "Option1"*@
+                                                    </label>
+                                                }
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div Class="form-group row">
+                                        <label for="inputExperience" class="col-sm-2 col-form-label">Start Accrual from date </label>
+                                        <div Class="col-sm-4">
+                                            @Html.EditorFor(model => model.CRMUserMaster.StartAccrualFromDate, new { htmlAttributes = new { @class = "form-control form-control-border", @type = "date", @Value = Model.CRMUserMaster.StartAccrualFromDate.ToString("yyyy-MM-dd") } })
+                                            @*@Html.TextBoxFor(Model => Model.CRMUserMaster.StartAccrualFromDate, new { @class = "form-control form-control-border", @type = "date", @value = Model.CRMUserMaster.StartAccrualFromDate.ToString("mm-dd-yyyy") })*@
+                                        </div>
+                                    </div>
+
+                                    <div Class="form-group row">
+                                        <label for="inputExperience" class="col-sm-2 col-form-label">Accrued Amount to Date</label>
+                                        <div Class="col-sm-4">
+                                            @Html.TextBoxFor(Model => Model.CRMUserMaster.AccruedAmountToDate, new { @class = "form-control form-control-border", @Value = Model.CRMUserMaster.AccruedAmountToDate })
+                                        </div>
+                                    </div>
+                                    <div Class="form-group row">
+                                        <label for="inputExperience" class="col-sm-2 col-form-label">Paid to Date</label>
+                                        <div Class="col-sm-4">
+                                            @*<input type="date" Class="form-control form-control-border" id="inputExperience" placeholder="Paid to Date" />*@
+                                            @Html.TextBoxFor(Model => Model.CRMUserMaster.PaidToDate, new { @class = "form-control form-control-border", @placeholder = "Balance", @value = Model.CRMUserMaster.PaidToDate })
+                                        </div>
+                                    </div>
+                                    <div Class="form-group row">
+                                        <label for="inputExperience" class="col-sm-2 col-form-label">Balance</label>
+                                        <div Class="col-sm-4">
+                                            @Html.TextBoxFor(Model => Model.CRMUserMaster.Balance, new { @class = "form-control form-control-border", @placeholder = "Balance", @value = Model.CRMUserMaster.Balance })
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+
+                        <div Class="tab-pane" id="DocumentAttachment">
+                            <div Class="post">
+                                <form Class="form-horizontal">
+
+                                    @*<button type="button" Class="btn btn-primary" data-toggle="modal" data-target="#modal-lg" data-bs-backdrop="static" data-bs-keyboard="false">
+                                            Add Documents
+                                        </button>*@
+                                    @*@Html.Partial("~/Views/Shared/EzUtility/_DocumentAttachment.cshtml", Model.DocumentAttachmentMaster)*@
+
+                                </form>
+                            </div>
+                        </div>
+
+                        <div id="Notes" Class="tab-pane">
+                            <div Class="form-group row">
+                                <label for="inputSkills" class="col-sm-2 col-form-label">Notes</label>
+                                <div Class="col-sm-10">
+                                    @Html.TextAreaFor(Model => Model.CRMUserMaster.Notes, new { @class = "form-control form-control-border", @placeholder = "Skills", @value = Model.CRMUserMaster.Notes })
+                                    @*< textarea type="text" class="form-control" id="inputSkills" placeholder="Skills"></textarea>*@
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr />
+                    <div Class="col-sm-12">
+                        @Html.Partial("~/Views/Shared/CommonButtons.cshtml")
+                        @Html.ActionLink("Back to List", "Index", new { CmpyCode = @companyCode, Id = @SectionId, userName = @userName })
+
+                    </div>
+                </div>
+
+                @*Accordian Body*@
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@*Modal Form*@
+

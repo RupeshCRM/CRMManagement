@@ -1,0 +1,19 @@
+﻿@model CRM.ModelsVM.EzUtility.clsDocumentAttachmentVM
+
+@{
+
+    Layout = "~/Views/Shared/CRM/_CRMLayout.cshtml";
+}
+<!--<bo-->@*dy>*@
+@Html.Partial("~/Views/Shared/EzUtility/_DocumentAttachmentCreateEditDelete.cshtml", Model)
+
+@*</body>*@
+
+
+@section Scripts {
+   
+    <script src="~/Scripts/CustomScript/commonToolbar.js?v=timestamp"></script>
+    <script src="~/Scripts/CustomScript/DocumentAttachmentMaster/DocumentAttachmentJS.js?v=timestamp"></script>
+
+}
+

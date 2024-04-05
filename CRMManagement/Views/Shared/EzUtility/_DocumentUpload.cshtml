@@ -1,0 +1,9 @@
+﻿@*@model List<CRM.Models.EzSystem.FileModel>*@
+
+
+@using (Html.BeginForm("UploadFile", "FileUpload", FormMethod.Post, new { enctype = "multipart/form-data", id = "uploadForm" }))
+{
+    <input type="file" name="file" id="fileInput" />
+    <input type="button" value="Upload" onclick="uploadFile()" />
+}
+

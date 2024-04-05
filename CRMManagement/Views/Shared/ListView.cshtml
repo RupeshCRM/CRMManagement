@@ -1,0 +1,142 @@
+﻿
+@model EZMasterSetup.clsControlsVM
+
+@{
+
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+    //var userName = Model.userRequest.UserName.ToString();
+    //var SectionId = Model.userRequest.SectionId;
+    //var oprType = Model.oprType;
+
+    var userName = (string)Session["UserName"];
+    var companyCode = (string)Session["CompanyCode"];
+    var FYear = (string)Session["FYear"];
+    var SectionId = @ViewBag.SectionId;
+    var oprType = @ViewBag.oprType;
+
+    var editRecord = Model.userInformation.Edit;
+    var createRecord = Model.userInformation.Create;
+    var deleteRecord = Model.userInformation.Delete;
+    var saveRecord = Model.userInformation.Save;
+}
+<style>
+    table, card-body {
+        background-color: #4991ab;
+        color: white; /* Font color for the entire table */
+    }
+
+        table th, table td {
+            color: white; /* Font color for header cells and data cells */
+            font-size: 1rem;
+            /* Add additional styling for table headers and cells if needed */
+        }
+
+    .scrollable-div {
+        width: auto; /* Set the width of your div */
+        height: auto; /* Set the height of your div */
+        overflow: auto; /* Add a scrollbar if the content overflows */
+        border: 1px solid #ccc; /* Optional: Add a border for styling */
+    }
+
+    a {
+        color: blue;
+    }
+
+        /* Set the color for visited links */
+        a:visited {
+            color: purple;
+        }
+
+        /* Set the color for links when hovered over */
+        td:hover, a:hover {
+            color: yellow;
+        }
+
+        /* Set the color for active links (when clicked) */
+        a:active {
+            color: green;
+        }
+</style>
+<div class="scrollable-div">
+    <div class="card border-info mb-3">
+        <div class="card-header border-info mb-3" id="headingAllRecord)">
+            <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseheadingAllRecord" aria-expanded="true" aria-controls="collapseheadingAllRecord">
+                    @Model.WorkflowDescription
+                </button>
+            </h5>
+        </div>
+        <div id="collapseheadingAllRecord" class="collapse show" aria-labelledby="headingheadingAllRecord" data-parent="#accordionExample">
+            <div>@Html.ActionLink("Create", "Create", new { CmpyCode = @companyCode, Id = @SectionId, UserName = @userName }) </div>
+
+            <div class="card-body">
+
+                <table class="table table-hover" id="dataTableData">
+                    <thead class="table-light">
+
+                        <tr>
+
+                            @foreach (var item in Model.ezWorkflowEditDisplayMaster)
+                            {
+                                foreach (System.Data.DataColumn column in Model.DisplayListRecords.Tables[0].Columns)
+                                {
+                                    if (column.ColumnName == item.ColumnValue)
+                                    {
+                                        <th> @item.ColumnCaption </th>
+                                        break;
+                                    }
+
+                                }
+
+                            }
+
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (System.Data.DataRow row in Model.DisplayListRecords.Tables[0].Rows)
+                        {
+                            <tr>
+                                @foreach (var Colitem in Model.ezWorkflowEditDisplayMaster)
+                                {
+                                    foreach (System.Data.DataColumn column in Model.DisplayListRecords.Tables[0].Columns)
+                                    {
+                                        if (column.ColumnName == Colitem.ColumnValue)
+                                        {
+                                            <td data- search=@row[Colitem.ColumnValue]> @row[Colitem.ColumnValue] </td>
+                                            break;
+                                        }
+
+                                    }
+
+                                }
+                                @foreach (System.Data.DataColumn columnItem in Model.DisplayListRecords.Tables[0].Columns)
+                                {
+                                    foreach (var item in Model.ezWorkflowEditDisplayMaster.Where(e => e.ColumnValue == columnItem.ColumnName && e.isPrimaryKey == 1))
+                                    {
+                                        @*<th>@item.ColumnCaption</th>*@
+                                        <td>@Html.ActionLink("Edit", "Edit", new { SectionId = Model.userRequest.SectionId, Id = @row[@columnItem.ColumnName], UserName = Model.userRequest.UserName }) </td>
+                                        <td>@Html.ActionLink("Delete", "Delete", new { SectionId = Model.userRequest.SectionId, Id = @row[@columnItem.ColumnName], UserName = Model.userRequest.UserName }) </td>
+                                    }
+                                }
+                            </tr>
+                        }
+
+
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--<script src="~/Scripts/datatables.min.js"></script>
+<script src="https://cdn.datatables.net/v/dt/dt-1.13.6/datatables.min.js"></script>-->
+<!-- Data Table CSS -->
+<!--<link rel='stylesheet' href='https://cdn.datatables.net/1.13.5/css/dataTables.bootstrap5.min.css'>-->
+<script>
+    // JavaScript code to hide the div
+    document.getElementById('commontoolbar').style.display = 'none';
+</script>

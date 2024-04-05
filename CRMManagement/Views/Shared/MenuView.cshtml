@@ -1,0 +1,24 @@
+﻿@*@if (ViewBag.MenuItems != null)
+    {
+        foreach (var item in Model)
+        {
+            <li>@Html.ActionLink(item.WorkflowDesc, item.DefaultActionMethod, item.ControllerName, new { CmpyCode = item.CmpyCode, Id = item.WorkflowCode, UserName = item.UserName }, new { @class = "" })</li>
+        }
+    }*@
+
+<div id="resultContainer"></div>
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+<script>
+
+       $.ajax({
+    url: '@Url.Action("GetPartialData", "UserLandingPage")', // Replace "My" with your controller name
+    type: 'GET',
+    success: function (data) {
+        // Handle the returned data (partial view HTML)
+        $('#resultContainer').html(data);
+    },
+    error: function () {
+        console.error('Error occurred while making the AJAX call.');
+    }
+});
+</script>

@@ -1,0 +1,646 @@
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\CRMManagement.dll.config
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\CRMManagement.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\CRMManagement.pdb
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\csc.exe
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\csc.exe.config
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\csc.rsp
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\csi.exe
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\csi.exe.config
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\csi.rsp
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\Microsoft.Managed.Core.targets
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\System.AppContext.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\System.Collections.Immutable.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\System.Console.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\System.Globalization.Calendars.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\System.IO.Compression.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\System.IO.FileSystem.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\System.Net.Http.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\System.Net.Sockets.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\System.Reflection.Metadata.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\System.ValueTuple.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\System.Xml.XmlDocument.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\System.Xml.XPath.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\vbc.exe
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\vbc.exe.config
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\vbc.rsp
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\VBCSCompiler.exe
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\roslyn\VBCSCompiler.exe.config
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\Antlr3.Runtime.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\CRM.BAL.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\CRM.Models.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\CRM.ModelsVM.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\EZMasterSetup.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\Microsoft.Web.Infrastructure.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\Newtonsoft.Json.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\System.Web.Helpers.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\System.Web.Mvc.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\System.Web.Optimization.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\System.Web.Razor.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\System.Web.WebPages.Deployment.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\System.Web.WebPages.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\System.Web.WebPages.Razor.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\WebGrease.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\CRM.DAL.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\CRM.BAL.pdb
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\CRM.BAL.dll.config
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\CRM.ModelsVM.pdb
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\CRM.ModelsVM.dll.config
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\CRM.Models.pdb
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\CRM.Models.dll.config
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\EZMasterSetup.pdb
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\System.Web.Helpers.xml
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\System.Web.Mvc.xml
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\System.Web.Razor.xml
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\System.Web.WebPages.xml
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\System.Web.WebPages.Deployment.xml
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\System.Web.WebPages.Razor.xml
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\System.Web.Optimization.xml
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\Newtonsoft.Json.xml
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\Antlr3.Runtime.pdb
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\CRM.DAL.pdb
+E:\CRM Management\New folder\CRMManagement\CRMManagement\bin\CRM.DAL.dll.config
+E:\CRM Management\New folder\CRMManagement\CRMManagement\obj\Debug\CRMManagement.csproj.AssemblyReference.cache
+E:\CRM Management\New folder\CRMManagement\CRMManagement\obj\Debug\CRMManagement.csproj.CoreCompileInputs.cache
+E:\CRM Management\New folder\CRMManagement\CRMManagement\obj\Debug\CRMManagement.csproj.CopyComplete
+E:\CRM Management\New folder\CRMManagement\CRMManagement\obj\Debug\CRMManagement.dll
+E:\CRM Management\New folder\CRMManagement\CRMManagement\obj\Debug\CRMManagement.pdb
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\CRMManagement.dll.config
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\CRMManagement.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\CRMManagement.pdb
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\csc.exe
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\csc.exe.config
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\csc.rsp
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\csi.exe
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\csi.exe.config
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\csi.rsp
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\System.AppContext.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\System.Collections.Immutable.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\System.Console.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\System.Globalization.Calendars.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\System.IO.Compression.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\System.IO.FileSystem.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\System.Net.Http.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\System.Net.Sockets.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\System.Reflection.Metadata.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\System.ValueTuple.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\System.Xml.XPath.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\vbc.exe
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\vbc.exe.config
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\vbc.rsp
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\VBCSCompiler.exe
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\roslyn\VBCSCompiler.exe.config
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\Antlr3.Runtime.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\CRM.BAL.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\CRM.Models.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\CRM.ModelsVM.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\Microsoft.Web.Infrastructure.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\Newtonsoft.Json.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\System.Web.Helpers.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\System.Web.Mvc.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\System.Web.Optimization.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\System.Web.Razor.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\System.Web.WebPages.Deployment.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\System.Web.WebPages.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\System.Web.WebPages.Razor.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\WebGrease.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\CRM.DAL.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\CRM.BAL.pdb
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\CRM.BAL.dll.config
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\CRM.ModelsVM.pdb
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\CRM.ModelsVM.dll.config
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\CRM.Models.pdb
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\CRM.Models.dll.config
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\System.Web.Helpers.xml
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\System.Web.Mvc.xml
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\System.Web.Razor.xml
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\System.Web.WebPages.xml
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\System.Web.WebPages.Deployment.xml
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\System.Web.WebPages.Razor.xml
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\System.Web.Optimization.xml
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\Newtonsoft.Json.xml
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\Antlr3.Runtime.pdb
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\CRM.DAL.pdb
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\bin\CRM.DAL.dll.config
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\obj\Debug\CRMManagement.csproj.AssemblyReference.cache
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\obj\Debug\CRMManagement.csproj.CoreCompileInputs.cache
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\obj\Debug\CRMManag.5F24EFEB.Up2Date
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\obj\Debug\CRMManagement.dll
+C:\Aniket Dange\Project\CRMManagement\CRMManagement\obj\Debug\CRMManagement.pdb
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\CRMManagement.dll.config
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\CRMManagement.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\CRMManagement.pdb
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\csc.exe
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\csc.exe.config
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\csc.rsp
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\csi.exe
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\csi.exe.config
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\csi.rsp
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\System.AppContext.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\System.Collections.Immutable.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\System.Console.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\System.Globalization.Calendars.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\System.IO.Compression.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\System.IO.FileSystem.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\System.Net.Http.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\System.Net.Sockets.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\System.Reflection.Metadata.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\System.ValueTuple.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\System.Xml.XPath.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\vbc.exe
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\vbc.exe.config
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\vbc.rsp
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\VBCSCompiler.exe
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\roslyn\VBCSCompiler.exe.config
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\Antlr3.Runtime.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\CRM.BAL.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\CRM.Models.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\CRM.ModelsVM.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\Microsoft.Web.Infrastructure.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\Newtonsoft.Json.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\System.Web.Helpers.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\System.Web.Mvc.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\System.Web.Optimization.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\System.Web.Razor.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\System.Web.WebPages.Deployment.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\System.Web.WebPages.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\System.Web.WebPages.Razor.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\WebGrease.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\CRM.DAL.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\CRM.BAL.pdb
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\CRM.BAL.dll.config
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\CRM.ModelsVM.pdb
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\CRM.ModelsVM.dll.config
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\CRM.Models.pdb
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\CRM.Models.dll.config
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\System.Web.Helpers.xml
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\System.Web.Mvc.xml
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\System.Web.Razor.xml
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\System.Web.WebPages.xml
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\System.Web.WebPages.Deployment.xml
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\System.Web.WebPages.Razor.xml
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\System.Web.Optimization.xml
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\Newtonsoft.Json.xml
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\Antlr3.Runtime.pdb
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\CRM.DAL.pdb
+C:\Santosh\Projects\CRMManagement\CRMManagement\bin\CRM.DAL.dll.config
+C:\Santosh\Projects\CRMManagement\CRMManagement\obj\Debug\CRMManagement.csproj.AssemblyReference.cache
+C:\Santosh\Projects\CRMManagement\CRMManagement\obj\Debug\CRMManagement.csproj.CoreCompileInputs.cache
+C:\Santosh\Projects\CRMManagement\CRMManagement\obj\Debug\CRMManag.5F24EFEB.Up2Date
+C:\Santosh\Projects\CRMManagement\CRMManagement\obj\Debug\CRMManagement.dll
+C:\Santosh\Projects\CRMManagement\CRMManagement\obj\Debug\CRMManagement.pdb
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\CRMManagement.dll.config
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\CRMManagement.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\CRMManagement.pdb
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\csc.exe
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\csc.exe.config
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\csc.rsp
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\csi.exe
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\csi.exe.config
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\csi.rsp
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\System.AppContext.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\System.Collections.Immutable.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\System.Console.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\System.Globalization.Calendars.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\System.IO.Compression.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\System.IO.FileSystem.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\System.Net.Http.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\System.Net.Sockets.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\System.Reflection.Metadata.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\System.ValueTuple.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\System.Xml.XPath.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\vbc.exe
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\vbc.exe.config
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\vbc.rsp
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\VBCSCompiler.exe
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\roslyn\VBCSCompiler.exe.config
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\Antlr3.Runtime.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\CRM.BAL.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\CRM.Models.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\CRM.ModelsVM.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\Microsoft.Web.Infrastructure.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\Newtonsoft.Json.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\System.Web.Helpers.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\System.Web.Mvc.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\System.Web.Optimization.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\System.Web.Razor.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\System.Web.WebPages.Deployment.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\System.Web.WebPages.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\System.Web.WebPages.Razor.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\WebGrease.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\CRM.DAL.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\CRM.BAL.pdb
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\CRM.BAL.dll.config
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\CRM.ModelsVM.pdb
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\CRM.ModelsVM.dll.config
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\CRM.Models.pdb
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\CRM.Models.dll.config
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\System.Web.Helpers.xml
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\System.Web.Mvc.xml
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\System.Web.Razor.xml
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\System.Web.WebPages.xml
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\System.Web.WebPages.Deployment.xml
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\System.Web.WebPages.Razor.xml
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\System.Web.Optimization.xml
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\Newtonsoft.Json.xml
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\Antlr3.Runtime.pdb
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\CRM.DAL.pdb
+C:\Aniket Dange\CRMManagement\CRMManagement\bin\CRM.DAL.dll.config
+C:\Aniket Dange\CRMManagement\CRMManagement\obj\Debug\CRMManagement.csproj.AssemblyReference.cache
+C:\Aniket Dange\CRMManagement\CRMManagement\obj\Debug\CRMManagement.csproj.CoreCompileInputs.cache
+C:\Aniket Dange\CRMManagement\CRMManagement\obj\Debug\CRMManag.5F24EFEB.Up2Date
+C:\Aniket Dange\CRMManagement\CRMManagement\obj\Debug\CRMManagement.dll
+C:\Aniket Dange\CRMManagement\CRMManagement\obj\Debug\CRMManagement.pdb
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\CRMManagement.dll.config
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\CRMManagement.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\CRMManagement.pdb
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\csc.exe
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\csc.exe.config
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\csc.rsp
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\csi.exe
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\csi.exe.config
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\csi.rsp
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\Microsoft.Managed.Core.targets
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\System.AppContext.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\System.Collections.Immutable.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\System.Console.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\System.Globalization.Calendars.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\System.IO.Compression.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\System.IO.FileSystem.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\System.Net.Http.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\System.Net.Sockets.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\System.Reflection.Metadata.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\System.ValueTuple.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\System.Xml.XmlDocument.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\System.Xml.XPath.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\vbc.exe
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\vbc.exe.config
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\vbc.rsp
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\VBCSCompiler.exe
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\roslyn\VBCSCompiler.exe.config
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\Antlr3.Runtime.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\CRM.BAL.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\CRM.Models.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\CRM.ModelsVM.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\EZMasterSetup.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\Microsoft.Web.Infrastructure.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\Newtonsoft.Json.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\System.Web.Helpers.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\System.Web.Mvc.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\System.Web.Optimization.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\System.Web.Razor.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\System.Web.WebPages.Deployment.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\System.Web.WebPages.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\System.Web.WebPages.Razor.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\WebGrease.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\CRM.DAL.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\CRM.BAL.pdb
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\CRM.BAL.dll.config
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\CRM.ModelsVM.pdb
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\CRM.ModelsVM.dll.config
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\CRM.Models.pdb
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\CRM.Models.dll.config
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\EZMasterSetup.pdb
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\System.Web.Helpers.xml
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\System.Web.Mvc.xml
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\System.Web.Razor.xml
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\System.Web.WebPages.xml
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\System.Web.WebPages.Deployment.xml
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\System.Web.WebPages.Razor.xml
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\System.Web.Optimization.xml
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\Newtonsoft.Json.xml
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\Antlr3.Runtime.pdb
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\CRM.DAL.pdb
+E:\CRM Management\DM\CRMManagement\CRMManagement\bin\CRM.DAL.dll.config
+E:\CRM Management\DM\CRMManagement\CRMManagement\obj\Debug\CRMManagement.csproj.AssemblyReference.cache
+E:\CRM Management\DM\CRMManagement\CRMManagement\obj\Debug\CRMManagement.csproj.CoreCompileInputs.cache
+E:\CRM Management\DM\CRMManagement\CRMManagement\obj\Debug\CRMManagement.csproj.CopyComplete
+E:\CRM Management\DM\CRMManagement\CRMManagement\obj\Debug\CRMManagement.dll
+E:\CRM Management\DM\CRMManagement\CRMManagement\obj\Debug\CRMManagement.pdb
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\obj\Debug\CRMManagement.csproj.AssemblyReference.cache
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\obj\Debug\CRMManagement.csproj.CoreCompileInputs.cache
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\obj\Debug\CRMManagement.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\obj\Debug\CRMManagement.pdb
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\CRMManagement.dll.config
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\CRMManagement.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\CRMManagement.pdb
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\csc.exe
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\csc.exe.config
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\csc.rsp
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\csi.exe
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\csi.exe.config
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\csi.rsp
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\Microsoft.Managed.Core.targets
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\System.AppContext.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\System.Collections.Immutable.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\System.Console.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\System.Globalization.Calendars.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\System.IO.Compression.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\System.IO.FileSystem.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\System.Net.Http.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\System.Net.Sockets.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\System.Reflection.Metadata.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\System.ValueTuple.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\System.Xml.XmlDocument.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\System.Xml.XPath.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\vbc.exe
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\vbc.exe.config
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\vbc.rsp
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\VBCSCompiler.exe
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\roslyn\VBCSCompiler.exe.config
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\Antlr3.Runtime.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\CRM.BAL.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\CRM.CommonFunctionality.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\CRM.Models.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\CRM.ModelsVM.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\Microsoft.Web.Infrastructure.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\Newtonsoft.Json.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\System.Web.Helpers.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\System.Web.Mvc.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\System.Web.Optimization.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\System.Web.Razor.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\System.Web.WebPages.Deployment.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\System.Web.WebPages.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\System.Web.WebPages.Razor.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\WebGrease.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\CRM.DAL.dll
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\CRM.BAL.pdb
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\CRM.BAL.dll.config
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\CRM.CommonFunctionality.pdb
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\CRM.ModelsVM.pdb
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\CRM.ModelsVM.dll.config
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\CRM.Models.pdb
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\CRM.Models.dll.config
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\System.Web.Helpers.xml
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\System.Web.Mvc.xml
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\System.Web.Razor.xml
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\System.Web.WebPages.xml
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\System.Web.WebPages.Deployment.xml
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\System.Web.WebPages.Razor.xml
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\System.Web.Optimization.xml
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\Newtonsoft.Json.xml
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\Antlr3.Runtime.pdb
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\CRM.DAL.pdb
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\bin\CRM.DAL.dll.config
+E:\CRMManagement 3.0\CRMManagement\CRMManagement\obj\Debug\CRMManagement.csproj.CopyComplete
+E:\CRM Management\CRMManagement\CRMManagement\bin\CRMManagement.dll.config
+E:\CRM Management\CRMManagement\CRMManagement\bin\CRMManagement.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\CRMManagement.pdb
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\csc.exe
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\csc.exe.config
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\csc.rsp
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\csi.exe
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\csi.exe.config
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\csi.rsp
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\Microsoft.Managed.Core.targets
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\System.AppContext.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\System.Collections.Immutable.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\System.Console.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\System.Globalization.Calendars.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\System.IO.Compression.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\System.IO.FileSystem.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\System.Net.Http.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\System.Net.Sockets.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\System.Reflection.Metadata.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\System.ValueTuple.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\System.Xml.XmlDocument.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\System.Xml.XPath.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\vbc.exe
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\vbc.exe.config
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\vbc.rsp
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\VBCSCompiler.exe
+E:\CRM Management\CRMManagement\CRMManagement\bin\roslyn\VBCSCompiler.exe.config
+E:\CRM Management\CRMManagement\CRMManagement\bin\Antlr3.Runtime.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\CRM.BAL.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\CRM.CommonFunctionality.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\CRM.Models.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\CRM.ModelsVM.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\EZMasterSetup.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\Microsoft.Web.Infrastructure.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\Newtonsoft.Json.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\System.Web.Helpers.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\System.Web.Mvc.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\System.Web.Optimization.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\System.Web.Razor.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\System.Web.WebPages.Deployment.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\System.Web.WebPages.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\System.Web.WebPages.Razor.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\WebGrease.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\CRM.DAL.dll
+E:\CRM Management\CRMManagement\CRMManagement\bin\CRM.BAL.pdb
+E:\CRM Management\CRMManagement\CRMManagement\bin\CRM.BAL.dll.config
+E:\CRM Management\CRMManagement\CRMManagement\bin\CRM.CommonFunctionality.pdb
+E:\CRM Management\CRMManagement\CRMManagement\bin\CRM.ModelsVM.pdb
+E:\CRM Management\CRMManagement\CRMManagement\bin\CRM.ModelsVM.dll.config
+E:\CRM Management\CRMManagement\CRMManagement\bin\CRM.Models.pdb
+E:\CRM Management\CRMManagement\CRMManagement\bin\CRM.Models.dll.config
+E:\CRM Management\CRMManagement\CRMManagement\bin\System.Web.Helpers.xml
+E:\CRM Management\CRMManagement\CRMManagement\bin\System.Web.Mvc.xml
+E:\CRM Management\CRMManagement\CRMManagement\bin\System.Web.Razor.xml
+E:\CRM Management\CRMManagement\CRMManagement\bin\System.Web.WebPages.xml
+E:\CRM Management\CRMManagement\CRMManagement\bin\System.Web.WebPages.Deployment.xml
+E:\CRM Management\CRMManagement\CRMManagement\bin\System.Web.WebPages.Razor.xml
+E:\CRM Management\CRMManagement\CRMManagement\bin\System.Web.Optimization.xml
+E:\CRM Management\CRMManagement\CRMManagement\bin\Newtonsoft.Json.xml
+E:\CRM Management\CRMManagement\CRMManagement\bin\Antlr3.Runtime.pdb
+E:\CRM Management\CRMManagement\CRMManagement\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\CRM Management\CRMManagement\CRMManagement\bin\CRM.DAL.pdb
+E:\CRM Management\CRMManagement\CRMManagement\bin\CRM.DAL.dll.config
+E:\CRM Management\CRMManagement\CRMManagement\obj\Debug\CRMManagement.csproj.AssemblyReference.cache
+E:\CRM Management\CRMManagement\CRMManagement\obj\Debug\CRMManagement.csproj.CoreCompileInputs.cache
+E:\CRM Management\CRMManagement\CRMManagement\obj\Debug\CRMManagement.csproj.CopyComplete
+E:\CRM Management\CRMManagement\CRMManagement\obj\Debug\CRMManagement.dll
+E:\CRM Management\CRMManagement\CRMManagement\obj\Debug\CRMManagement.pdb

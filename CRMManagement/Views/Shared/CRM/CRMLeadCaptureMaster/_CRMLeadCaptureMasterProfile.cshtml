@@ -1,0 +1,395 @@
+﻿
+@model CRM.ModelsVM.CRM.clsCRMLeadCaptureMasterVM
+
+@{
+
+    Layout = "";
+    //var userName = Model.userRequest.UserName.ToString();
+    //var SectionId = Model.userRequest.SectionId;
+    //var oprType = Model.oprType;
+
+    var userName = (string)Session["UserName"];
+    var companyCode = (string)Session["CompanyCode"];
+    var FYear = (string)Session["FYear"];
+    var SectionId = @ViewBag.SectionId;
+    var oprType = @ViewBag.oprType;
+
+}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card card-cyan card-outline">
+                <div class="card-body box-profile">
+                    <div class="text-center">
+                        <img class="profile-user-img img-fluid img-circle" src="~/Content/dist/img/user4-128x128.jpg" alt="User profile picture">
+                    </div>
+                    <h3 class="profile-username text-center">Nina Mcintire</h3>
+                    <p class="text-muted text-center">Software Engineer</p>
+                    <ul class="list-group list-group-unbordered mb-3">
+                        <li class="list-group-item">
+                            <b>Followers</b> <a class="float-right">1,322</a>
+                        </li>
+                        <li class="list-group-item">
+                            <b>Following</b> <a class="float-right">543</a>
+                        </li>
+                        <li class="list-group-item">
+                            <b>Friends</b> <a class="float-right">13,287</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a>
+                </div>
+
+            </div>
+           
+            
+        </div>
+
+        <div class="col-md-9">
+            <div class="card">
+                <div class="card-header p-2">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item"><a class="nav-link active" href="#LeadCaptureInformation" data-toggle="tab">Lead Capture Information</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#ContactTab" data-toggle="tab">Contact Tab</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#LeadInformation" data-toggle="tab">Lead Information</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#DealInfo" data-toggle="tab">Deal Info</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#PSDescription" data-toggle="tab">PSDescription</a></li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <div class="tab-content">
+                        <div class="active tab-pane" id="LeadCaptureInformation">
+
+                            <div class="post">
+                                <form class="form-horizontal">
+                                    <div class="form-group row">
+                                        <label for="inputName" class="col-sm-2 col-form-label">Code</label>
+                                        <div class="col-sm-4">
+                                            @Html.TextBoxFor(Model => Model.CRMLeadCaptureMaster.Code, new { @class = "form-control form-control-border", @placeholder = "Code", @value = Model.CRMLeadCaptureMaster.Code })
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputName" class="col-sm-2 col-form-label">Lead ID</label>
+                                        <div class="col-sm-4">
+                                            @Html.TextBoxFor(Model => Model.CRMLeadCaptureMaster.LeadID, new { @class = "form-control form-control-border", @placeholder = "Lead ID", @value = Model.CRMLeadCaptureMaster.LeadID })
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputName" class="col-sm-2 col-form-label">Lead Name</label>
+                                        <div class="col-sm-4">
+                                            @Html.TextBoxFor(Model => Model.CRMLeadCaptureMaster.LeadName, new { @class = "form-control form-control-border", @placeholder = "LeadName", @value = Model.CRMLeadCaptureMaster.LeadName })
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputName" class="col-sm-2 col-form-label">Dates</label>
+                                        <div class="col-sm-4">
+                                            @* @Html.TextBoxFor(Model => Model.CRMLeadCaptureMaster.Dates, new { @class = "form-control form-control-border", @type = "date", @placeholder = "Dates", @value = Model.CRMLeadCaptureMaster.Dates })*@
+                                            @Html.EditorFor(model => model.CRMLeadCaptureMaster.Dates, new { htmlAttributes = new { @class = "form-control form-control-border", @type = "date", @Value = Model.CRMLeadCaptureMaster.Dates.ToString("yyyy-MM-dd") } })
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputName" class="col-sm-2 col-form-label">Created By</label>
+                                        <div class="col-sm-4">
+                                            @Html.TextBoxFor(Model => Model.CRMLeadCaptureMaster.CreatedBy, new { @class = "form-control form-control-border", @placeholder = "Created By", @value = Model.CRMLeadCaptureMaster.CreatedBy })
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputName" class="col-sm-2 col-form-label">Contact Type</label>
+                                        <div class="col-sm-3">
+                                            <fieldset>
+                                                @foreach (var option in Model.ContactTypeList)
+                                                {
+                                                    <label>
+                                                        @Html.RadioButtonFor(Model => Model.CRMLeadCaptureMaster.ContactType, option.Value) @option.Text
+                                                        @*//, strVar == "Option1"*@
+                                                    </label>
+                                                }
+                                            </fieldset>
+                                        </div>
+                                    </div>
+
+                                    <hr />
+                                    <div class="form-group row">
+                                        <h4><b class="col-sm-2 col-form-label">Individual</b></h4>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+                                        <div class="col-sm-1">
+
+                                            @Html.DropDownListFor(model => model.CRMLeadCaptureMaster.Salutation, new SelectList(new List<SelectListItem>
+                                       {
+                                           new SelectListItem { Text = "Mr", Value = "Mr" },
+                                           new SelectListItem { Text = "Miss", Value = "Miss" },
+                                           new SelectListItem { Text = "Other", Value = "Other" }
+                                        }, "Value", "Text"), "Select", new { @class = "form-control form-control-border", @style = "width: 100%;" })
+
+                                        </div>
+
+                                        <div class="col-sm-3">
+                                            @Html.TextBoxFor(Model => Model.CRMLeadCaptureMaster.FirstName, new { @class = "form-control form-control-border", @placeholder = "First Name", @value = Model.CRMLeadCaptureMaster.FirstName })
+                                        </div>
+                                        <div class="col-sm-3">
+                                            @Html.TextBoxFor(Model => Model.CRMLeadCaptureMaster.LastName, new { @class = "form-control form-control-border", @placeholder = "Last Name", @value = Model.CRMLeadCaptureMaster.LastName })
+                                        </div>
+                                        <div class="col-sm-3">
+                                            @Html.TextBoxFor(Model => Model.CRMLeadCaptureMaster.MiddleName, new { @class = "form-control form-control-border", @placeholder = "Middle Name  Optional", @value = Model.CRMLeadCaptureMaster.MiddleName })
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputName" class="col-sm-2 col-form-label">MarriedStatus</label>
+                                        <div class="col-sm-3">
+                                            <fieldset>
+                                                @foreach (var option in Model.MarriedStatusList)
+                                                {
+                                                    <label>
+                                                        @Html.RadioButtonFor(Model => Model.CRMLeadCaptureMaster.MarriedStatus, option.Value) @option.Text
+                                                        @*//, strVar == "Option1"*@
+                                                    </label>
+                                                }
+                                            </fieldset>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="inputName2" class="col-sm-2 col-form-label">Profession Code</label>
+                                        <div class="col-sm-4">
+                                            @Html.DropDownListFor(Model => Model.CRMLeadCaptureMaster.ProfessionCode, new SelectList(Model.ProfessionCodeList, "Value", "Text", Model.CRMLeadCaptureMaster.ProfessionCode), "Select an option", new { @class = "form-control form-control-border", @style = "width: 100%;" })
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputName2" class="col-sm-2 col-form-label">Designation Type</label>
+                                        <div class="col-sm-4">
+                                            @Html.DropDownListFor(Model => Model.CRMLeadCaptureMaster.DesignationType, new SelectList(Model.DesignationTypeList, "Value", "Text", Model.CRMLeadCaptureMaster.DesignationType), "Select an option", new { @class = "form-control form-control-border", @style = "width: 100%;" })
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputExperience" class="col-sm-2 col-form-label">Tel#: </label>
+                                        <div class="col-sm-4">
+                                            @Html.TextBoxFor(Model => Model.CRMLeadCaptureMaster.TeliPhone, new { @class = "form-control form-control-border", @placeholder = "Teli Phone ", @value = Model.CRMLeadCaptureMaster.TeliPhone })
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputExperience" class="col-sm-2 col-form-label">Cel#: </label>
+                                        <div class="col-sm-4">
+                                            @Html.TextBoxFor(Model => Model.CRMLeadCaptureMaster.CellPhone, new { @class = "form-control form-control-border", @placeholder = "Cell Phone ", @value = Model.CRMLeadCaptureMaster.CellPhone })
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputExperience" class="col-sm-2 col-form-label">Email ID1: </label>
+                                        <div class="col-sm-4">
+                                            @Html.TextBoxFor(Model => Model.CRMLeadCaptureMaster.EmailID1, new { @class = "form-control form-control-border", @placeholder = "Email ID1 ", @value = Model.CRMLeadCaptureMaster.EmailID1 })
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputExperience" class="col-sm-2 col-form-label">Email ID2: </label>
+                                        <div class="col-sm-4">
+                                            @Html.TextBoxFor(Model => Model.CRMLeadCaptureMaster.EmailID2, new { @class = "form-control form-control-border", @placeholder = "Email ID2 ", @value = Model.CRMLeadCaptureMaster.EmailID2 })
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputExperience" class="col-sm-2 col-form-label">Income Type: </label>
+                                        <div class="col-sm-4">
+                                            <fieldset>
+                                                @foreach (var option in Model.IncomeTypeList)
+                                                {
+                                                    <label>
+                                                        @Html.RadioButtonFor(Model => Model.CRMLeadCaptureMaster.IncomeType, option.Value) @option.Text
+                                                        @*//, strVar == "Option1"*@
+                                                    </label>
+                                                }
+                                            </fieldset>
+                                        </div>
+                                        <label for="inputExperience" class="col-sm-2 col-form-label">Income: </label>
+                                        <div class="col-sm-4">
+                                            @Html.TextBoxFor(Model => Model.CRMLeadCaptureMaster.Income, new { @class = "form-control form-control-border", @placeholder = "Income ", @value = Model.CRMLeadCaptureMaster.Income })
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputExperience" class="col-sm-2 col-form-label">Hobbies: </label>
+                                        <div class="col-sm-4">
+                                            @Html.TextBoxFor(Model => Model.CRMLeadCaptureMaster.Hobbies, new { @class = "form-control form-control-border", @placeholder = "Hobbies ", @value = Model.CRMLeadCaptureMaster.Hobbies })
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputName2" class="col-sm-2 col-form-label">Employment Type</label>
+                                        <div class="col-sm-4">
+                                            @Html.DropDownListFor(Model => Model.CRMLeadCaptureMaster.EmploymentType, new SelectList(Model.EmploymentTypeList, "Value", "Text", Model.CRMLeadCaptureMaster.EmploymentType), "Select an option", new { @class = "form-control form-control-border", @style = "width: 100%;" })
+                                        </div>
+                                    </div>
+
+
+                                    <hr />
+                                    <div class="form-group row">
+                                        <h4><b class="col-sm-2 col-form-label">Company</b></h4>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputExperience" class="col-sm-2 col-form-label">Company Name: </label>
+                                        <div class="col-sm-4">
+                                            @Html.TextBoxFor(Model => Model.CRMLeadCaptureMaster.CompanyName, new { @class = "form-control form-control-border", @placeholder = "Company Name ", @value = Model.CRMLeadCaptureMaster.CompanyName })
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputExperience" class="col-sm-2 col-form-label">Main Phone Number: </label>
+                                        <div class="col-sm-4">
+                                            @Html.TextBoxFor(Model => Model.CRMLeadCaptureMaster.MainPhoneNumber, new { @class = "form-control form-control-border", @placeholder = "Main Phone Number ", @value = Model.CRMLeadCaptureMaster.MainPhoneNumber })
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputExperience" class="col-sm-2 col-form-label">Main Fax Number: </label>
+                                        <div class="col-sm-4">
+                                            @Html.TextBoxFor(Model => Model.CRMLeadCaptureMaster.MainFaxNumber, new { @class = "form-control form-control-border", @placeholder = "Main Fax Number ", @value = Model.CRMLeadCaptureMaster.MainFaxNumber })
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputExperience" class="col-sm-2 col-form-label">MainEmail: </label>
+                                        <div class="col-sm-4">
+                                            @Html.TextBoxFor(Model => Model.CRMLeadCaptureMaster.MainEmail, new { @class = "form-control form-control-border", @placeholder = "Main Email ", @value = Model.CRMLeadCaptureMaster.MainEmail })
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputExperience" class="col-sm-2 col-form-label">URL: </label>
+                                        <div class="col-sm-4">
+                                            @Html.TextBoxFor(Model => Model.CRMLeadCaptureMaster.URL, new { @class = "form-control form-control-border", @placeholder = "URL ", @value = Model.CRMLeadCaptureMaster.URL })
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputExperience" class="col-sm-2 col-form-label">Industry: </label>
+                                        <div class="col-sm-4">
+                                            @Html.TextBoxFor(Model => Model.CRMLeadCaptureMaster.Industry, new { @class = "form-control form-control-border", @placeholder = "Industry ", @value = Model.CRMLeadCaptureMaster.Industry })
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputExperience" class="col-sm-2 col-form-label">Yearly Turnover: </label>
+                                        <div class="col-sm-4">
+                                            @Html.TextBoxFor(Model => Model.CRMLeadCaptureMaster.YearlyTurnover, new { @class = "form-control form-control-border", @placeholder = "Yearly Turnover ", @value = Model.CRMLeadCaptureMaster.YearlyTurnover })
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="inputExperience" class="col-sm-2 col-form-label">Number Of Employees: </label>
+                                        <div class="col-sm-4">
+                                            @Html.TextBoxFor(Model => Model.CRMLeadCaptureMaster.NumberOfEmployees, new { @class = "form-control form-control-border", @placeholder = "Number Of Employees ", @value = Model.CRMLeadCaptureMaster.NumberOfEmployees })
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div id="ContactType" class="tab-pane">
+                            <div class="form-group row">
+
+                            </div>
+                        </div>
+                        <div id="LeadInformation" class="tab-pane">
+                            <div class="form-group row">
+                                <label for="inputName" class="col-sm-3 col-form-label">AccountType</label>
+                                <div class="col-sm-4">
+                                    <fieldset>
+                                        @foreach (var option in Model.AccountTypeList)
+                                        {
+                                            <label>
+                                                @Html.RadioButtonFor(Model => Model.CRMLeadCaptureMaster.AccountType, option.Value) @option.Text
+                                                @*//, strVar == "Option1"*@
+                                            </label>
+                                        }
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputName" class="col-sm-3 col-form-label">Lead Genration Type</label>
+                                <div class="col-sm-4">
+                                    <fieldset>
+                                        @foreach (var option in Model.LeadGenrationTypeList)
+                                        {
+                                            <label>
+                                                @Html.RadioButtonFor(Model => Model.CRMLeadCaptureMaster.LeadGenrationType, option.Value) @option.Text
+                                                @*//, strVar == "Option1"*@
+                                            </label>
+                                        }
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputName2" class="col-sm-3 col-form-label">Lead Source Outbound</label>
+                                <div class="col-sm-4">
+                                    @Html.DropDownListFor(Model => Model.CRMLeadCaptureMaster.LeadSourceOutbound, new SelectList(Model.LeadSourceOutboundList, "Value", "Text", Model.CRMLeadCaptureMaster.LeadSourceOutbound), "Select an option", new { @class = "form-control form-control-border", @style = "width: 100%;" })
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputName2" class="col-sm-3 col-form-label">Lead Source Inbound</label>
+                                <div class="col-sm-4">
+                                    @Html.DropDownListFor(Model => Model.CRMLeadCaptureMaster.LeadSourceInbound, new SelectList(Model.LeadSourceInboundList, "Value", "Text", Model.CRMLeadCaptureMaster.LeadSourceInbound), "Select an option", new { @class = "form-control form-control-border", @style = "width: 100%;" })
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputName2" class="col-sm-3 col-form-label">Lead Sub Source</label>
+                                <div class="col-sm-4">
+                                    @Html.DropDownListFor(Model => Model.CRMLeadCaptureMaster.LeadSubSource, new SelectList(Model.LeadSubSourceList, "Value", "Text", Model.CRMLeadCaptureMaster.LeadSubSource), "Select an option", new { @class = "form-control form-control-border", @style = "width: 100%;" })
+                                </div>
+                            </div>
+                        </div>
+                        <div id="DealInfo" class="tab-pane">
+                            <div class="form-group row">
+                                <label for="inputExperience" class="col-sm-2 col-form-label">Approximate Deal Value: </label>
+                                <div class="col-sm-4">
+                                    @Html.TextBoxFor(Model => Model.CRMLeadCaptureMaster.ApproximateDealValue, new { @class = "form-control form-control-border", @placeholder = "Approximate Deal Value", @value = Model.CRMLeadCaptureMaster.ApproximateDealValue })
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputExperience" class="col-sm-2 col-form-label">Approximate Deal Clouser Date: </label>
+                                <div class="col-sm-4">
+                                    @Html.EditorFor(model => model.CRMLeadCaptureMaster.ApproximateDealClouserDate, new { htmlAttributes = new { @class = "form-control form-control-border", @type = "date", @Value = Model.CRMLeadCaptureMaster.ApproximateDealClouserDate.ToString("yyyy-MM-dd") } })
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputName2" class="col-sm-2 col-form-label">Sub Stage</label>
+                                <div class="col-sm-4">
+                                    @Html.DropDownListFor(Model => Model.CRMLeadCaptureMaster.SubStage, new SelectList(Model.SubStageList, "Value", "Text", Model.CRMLeadCaptureMaster.SubStage), "Select an option", new { @class = "form-control form-control-border", @style = "width: 100%;" })
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputExperience" class="col-sm-2 col-form-label">Pipeline Name: </label>
+                                <div class="col-sm-4">
+                                    @Html.TextBoxFor(Model => Model.CRMLeadCaptureMaster.PipelineName, new { @class = "form-control form-control-border", @placeholder = "Pipeline Name", @value = Model.CRMLeadCaptureMaster.PipelineName })
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputExperience" class="col-sm-2 col-form-label">Deal Sub Stage: </label>
+                                <div class="col-sm-4">
+                                    @Html.TextBoxFor(Model => Model.CRMLeadCaptureMaster.DealSubStage, new { @class = "form-control form-control-border", @placeholder = "Deal Sub Stage", @value = Model.CRMLeadCaptureMaster.DealSubStage })
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                            <div id="PSDescription" class="tab-pane">
+                                <div class="form-group row">
+                                    <label for="inputSkills" class="col-sm-2 col-form-label">PSDescription</label>
+                                    <div class="col-sm-10">
+                                        @Html.TextAreaFor(Model => Model.CRMLeadCaptureMaster.PSDescription, new { @class = "form-control form-control-border", @placeholder = "Product Service Description", @value = Model.CRMLeadCaptureMaster.PSDescription })
+                                        @*< textarea type="text" class="form-control" id="inputSkills" placeholder="Skills"></textarea>*@
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="col-sm-12">
+                            @Html.Partial("~/Views/Shared/CommonButtons.cshtml")
+                            @Html.ActionLink("Back to List", "Index", new { CmpyCode = @companyCode, Id = @SectionId, userName = @userName })
+                        </div>
+                    </div>
+
+                @*Accordian Body*@
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+

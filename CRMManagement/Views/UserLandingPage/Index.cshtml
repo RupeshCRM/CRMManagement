@@ -1,0 +1,18 @@
+﻿@model  CRM.Models.Configuration.clsDashboardVM
+@{
+    //Layout = null;
+    var userName = ViewBag.UserName;
+    var FYear = ViewBag.FYear;
+    var companyCode = ViewBag.CompanyCode;
+
+
+}
+<input type="text" id="gblUserName" value="@userName" hidden />
+<input type="text" id="gblcompanyCode" value="@companyCode" hidden />
+<input type="text" id="gblFYear" value="@FYear" hidden />
+@Html.Partial("~/Views/Shared/Settings/UserLandingView.cshtml", Model)
+
+
+
+
+

@@ -1,0 +1,37 @@
+﻿@model CRM.ModelsVM.CRM.clsCRMUserMasterVM
+
+@{
+
+    Layout = "";
+    //var userName = Model.userRequest.UserName.ToString();
+    //var SectionId = Model.userRequest.SectionId;
+    //var oprType = Model.oprType;
+
+    var userName = (string)Session["UserName"];
+    var companyCode = (string)Session["CompanyCode"];
+    var FYear = (string)Session["FYear"];
+    var SectionId = @ViewBag.SectionId;
+    var oprType = @ViewBag.oprType;
+
+    var editRecord = Model.ControlsVM.userInformation.Edit;
+    var createRecord = Model.ControlsVM.userInformation.Create;
+    var deleteRecord = Model.ControlsVM.userInformation.Delete;
+    var saveRecord = Model.ControlsVM.userInformation.Save;
+}
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <input type="text" id="gblUserName" value="@userName" hidden />
+    <input type="text" id="gblcompanyCode" value="@companyCode" hidden />
+    <input type="text" id="gblFYear" value="@FYear" hidden />
+    <input type="text" id="gblSectionId" value="@SectionId" hidden />
+    <input type="text" id="gbloprTypeId" value="@oprType" hidden />
+
+    <input type="text" id="gbleditRecord" value="@editRecord" hidden />
+    <input type="text" id="gblcreateRecord" value="@createRecord" hidden />
+    <input type="text" id="gbldeleteRecord" value="@deleteRecord" hidden />
+    <input type="text" id="gblsaveRecord" value="@saveRecord" hidden />
+
+    @Html.Partial("~/Views/Shared/CRM/CRMUserMaster/_CRMUserProfile.cshtml", Model);
+   
+}

@@ -1,0 +1,18 @@
+﻿
+
+@model CRM.ModelsVM.CRM.clsCRMListingPageInfoMasterVM
+
+@{
+
+    Layout = "~/Views/Shared/CRM/_CRMLayout.cshtml";
+}
+<body>
+    @Html.Partial("~/Views/Shared/CRM/CRMListingPageInfoMaster/_CRMListingPageInfoMasterCreateEditDelete.cshtml", Model)
+
+</body>
+
+
+@section Scripts {
+    <script src="~/Scripts/CustomScript/commonToolbar.js?v=timestamp"></script>
+    <script src="~/Scripts/CustomScript/CRM/CRMListingPageInfoMasterJS.js?v=timestamp"></script>
+}

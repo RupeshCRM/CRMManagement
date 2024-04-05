@@ -1,0 +1,173 @@
+﻿@model EZMasterSetup.clsControlsVM
+@{
+    var sectionname = "heading";
+    var intCount = 1;
+}
+
+
+<body>
+
+    
+    <div class="accordion" id="accordionExample">
+        @foreach (var item in Model.sectionMaster.Distinct())
+        {
+            <div class="card">
+                <div class="card-header" id="heading@(item.SectionPk)">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse@(item.SectionPk)" aria-expanded="true" aria-controls="collapse@(item.SectionPk)">
+                            @item.Description
+                        </button>
+                    </h5>
+                </div>
+
+
+                @if (item.isApplicableForTable == 0)
+                {
+                    <div id="collapse@(item.SectionPk)" class="collapse show" aria-labelledby="heading@(item.SectionPk)" data-parent="#accordionExample">
+                        <div class="card-body">
+                            @*Printing All Headers*@
+                            @foreach (var control in Model.controls.Where(e => e.SectionFk == item.SectionPk && e.isApplicableForTable == 0))
+                            {
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        @Html.Label(control.LableName)
+                                    </div>
+                                    @if (control.ControlType == "TextBox")
+                                    {
+                                        <div class="col-md-8">
+                                            @Html.TextBox(control.FieldName, "", new { @class = "form-control" })
+                                        </div>
+                                    }
+                                    @if (control.ControlType == "Date")
+                                    {
+                                        <div class="col-md-8">
+                                            @Html.TextBox(control.FieldName, DateTime.Now.ToString("yyyy-MM-dd"), new { @class = "form-control", @type = "date" })
+                                        </div>
+                                    }
+                                    @if (control.ControlType == "DropDownList")
+                                    {
+                                        <div class="col-md-8">
+                                            @Html.DropDownList(control.FieldName, control.listValues, "Select an option", new { @class = "form-control js-example-tags" })
+                                        </div>
+                                    }
+                                    @if (control.ControlType == "TextArea")
+                                    {
+                                        <div class="col-md-8">
+                                            @Html.TextArea(control.FieldName, new { @class = "form-control" })
+                                        </div>
+                                    }
+                                    @if (control.ControlType == "CheckBox")
+                                    {
+                                        <div class="col-md-8">
+                                            @Html.CheckBox(control.FieldName, new { @class = "form-control" })
+                                        </div>
+                                    }
+                                    @if (control.ControlType == "ListBox")
+                                    {
+                                        <div class="col-md-8">
+                                            @Html.ListBox(control.FieldName, new SelectList(control.listValues, "Value", "Text"))
+                                        </div>
+                                    }
+                                    @if (control.ControlType == "RadioButton")
+                                    {
+                                        <div class="col-md-8">
+                                            @Html.RadioButton(control.FieldName, "1", new { @class = "form-control" })
+                                            @Html.RadioButton(control.FieldName, "2", new { @class = "form-control" })
+                                            @Html.RadioButton(control.FieldName, "3", new { @class = "form-control" })
+                                        </div>
+                                    }
+
+                                </div>
+                            }
+                        </div>
+                    </div>
+                }
+                else
+                {
+                        <div id="collapse@(item.SectionPk)" class="collapse show" aria-labelledby="heading@(item.SectionPk)" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            @foreach (var col in Model.controls.Where(m => m.SectionFk == item.SectionPk && m.isApplicableForTable == 1))
+                                            {
+                                                <th scope="col">@col.LableName</th>
+                                            }
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+
+                                            @foreach (var col in Model.controls.Where(m => m.SectionFk == item.SectionPk && m.isApplicableForTable == 1))
+                                            {
+                                                if (col.ControlType == "TextBox")
+                                                {
+                                                    <th scope="col">
+                                                        @Html.TextBox(col.FieldName, "", new { @class = "form-control" })
+                                                    </th>
+                                                }
+                                                if (col.ControlType == "Date")
+                                                {
+                                                    <th scope="col">
+                                                        @Html.TextBox(col.FieldName, DateTime.Now.ToString("yyyy-MM-dd"), new { @class = "form-control", @type = "date" })
+                                                    </th>
+                                                }
+                                                if (col.ControlType == "DropDownList")
+                                                {
+                                                    <th scope="col">
+                                                        @Html.DropDownList(col.FieldName, col.listValues, "Select an option", new { @class = "form-control js-example-tags" })
+                                                    </th>
+                                                }
+                                                if (col.ControlType == "TextArea")
+                                                {
+                                                    <th scope="col">
+                                                        @Html.TextArea(col.FieldName, new { @class = "form-control" })
+                                                    </th>
+                                                }
+                                                if (col.ControlType == "CheckBox")
+                                                {
+                                                    <th scope="col">
+                                                        @Html.CheckBox(col.FieldName, new { @class = "form-control" })
+                                                    </th>
+                                                }
+                                                if (col.ControlType == "ListBox")
+                                                {
+                                                    <th scope="col">
+                                                        @Html.ListBox(col.FieldName, new SelectList(col.listValues, "Value", "Text"))
+                                                    </th>
+                                                }
+                                                if (col.ControlType == "RadioButton")
+                                                {
+                                                    <th scope="col">
+                                                        @Html.RadioButton(col.FieldName, "1", new { @class = "form-control" })
+                                                        @Html.RadioButton(col.FieldName, "2", new { @class = "form-control" })
+                                                        @Html.RadioButton(col.FieldName, "3", new { @class = "form-control" })
+                                                    </th>
+                                                }
+                                            }
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                }
+
+            </div>
+        }
+     </div>
+
+                    <!-- Include the Select2 CSS file -->
+                    <script src="~/Scripts/jquery-3.4.1.js"></script>
+                    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+                    <!-- Include the Select2 JS file -->
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+
+</body>
+
+
+<script>
+    $(".js-example-tags").select2({
+        tags: true
+    });
+</script>

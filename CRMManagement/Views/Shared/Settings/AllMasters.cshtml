@@ -1,0 +1,57 @@
+﻿
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card card-cyan card-outline">
+                <div class="card-body box-profile">
+                    All Master List
+                </div>
+            </div>
+        </div>
+
+        <div Class="col-md-9">
+            <div Class="card">
+                <div Class="card-header p-2">
+                    <ul Class="nav nav-pills">
+                        <li Class="nav-item"><a class="nav-link active" href="#UserBasicInformation1" data-toggle="tab">User Basic Information</a></li>
+                    </ul>
+                </div>
+                <div Class="card-body">
+                    <div Class="tab-content">
+
+                        <div Class="active tab-pane" id="UserBasicInformation1">
+
+                            <div Class="post">
+                                <form Class="form-horizontal">
+                                    <div Class="form-group row">
+                                        <label for="inputName" class="col-sm-2 col-form-label">Entry Reference</label>
+                                        <div Class="col-sm-4">
+                                            
+                                        </div>
+                                    </div>
+                              
+
+
+                                </form>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <hr />
+                    <div Class="col-sm-12">
+                        @Html.Partial("~/Views/Shared/CommonButtons.cshtml")
+                        @*@Html.ActionLink("Back to List", "Index", new { CmpyCode = @companyCode, Id = @SectionId, userName = @userName })*@
+
+                    </div>
+                </div>
+
+                @*Accordian Body*@
+
+            </div>
+        </div>
+    </div>
+</div>
+

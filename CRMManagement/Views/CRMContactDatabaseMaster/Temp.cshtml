@@ -1,0 +1,228 @@
+﻿
+@model CRM.Models.CRM.clsCRMContactDatabaseMaster
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>clsCRMContactDatabaseMaster</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CmpyCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CmpyCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Code)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContactType)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ContactType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContactType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Salutation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Salutation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MiddleName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MiddleName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MarriedStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MarriedStatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProfessionCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProfessionCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Designation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Designation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TeliPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TeliPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CellPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CellPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmailID1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmailID1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmailID2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmailID2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Hobbies)
+        </dt>
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.Income)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Income)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IncomeType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IncomeType)
+        </dd>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hobbies)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmploymentType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmploymentType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CompanyName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MainPhoneNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MainPhoneNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MainFaxNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MainFaxNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MainEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MainEmail)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.URL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.URL)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Industry)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Industry)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.YearlyTurnover)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YearlyTurnover)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NumberOfEmployees)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumberOfEmployees)
+        </dd>
+
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
+

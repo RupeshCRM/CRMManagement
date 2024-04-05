@@ -1,0 +1,173 @@
+E:\CRM Management\New folder\CRMManagement\CRM.DAL\bin\Debug\CRM.DAL.dll.config
+E:\CRM Management\New folder\CRMManagement\CRM.DAL\bin\Debug\CRM.DAL.dll
+E:\CRM Management\New folder\CRMManagement\CRM.DAL\bin\Debug\CRM.DAL.pdb
+E:\CRM Management\New folder\CRMManagement\CRM.DAL\bin\Debug\CRM.Models.dll
+E:\CRM Management\New folder\CRMManagement\CRM.DAL\bin\Debug\EZMasterSetup.dll
+E:\CRM Management\New folder\CRMManagement\CRM.DAL\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\CRM Management\New folder\CRMManagement\CRM.DAL\bin\Debug\System.Web.Helpers.dll
+E:\CRM Management\New folder\CRMManagement\CRM.DAL\bin\Debug\System.Web.Mvc.dll
+E:\CRM Management\New folder\CRMManagement\CRM.DAL\bin\Debug\System.Web.Razor.dll
+E:\CRM Management\New folder\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\CRM Management\New folder\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.dll
+E:\CRM Management\New folder\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.Razor.dll
+E:\CRM Management\New folder\CRMManagement\CRM.DAL\bin\Debug\CRM.Models.pdb
+E:\CRM Management\New folder\CRMManagement\CRM.DAL\bin\Debug\CRM.Models.dll.config
+E:\CRM Management\New folder\CRMManagement\CRM.DAL\bin\Debug\EZMasterSetup.pdb
+E:\CRM Management\New folder\CRMManagement\CRM.DAL\bin\Debug\System.Web.Helpers.xml
+E:\CRM Management\New folder\CRMManagement\CRM.DAL\bin\Debug\System.Web.Mvc.xml
+E:\CRM Management\New folder\CRMManagement\CRM.DAL\bin\Debug\System.Web.Razor.xml
+E:\CRM Management\New folder\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.xml
+E:\CRM Management\New folder\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\CRM Management\New folder\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.Razor.xml
+E:\CRM Management\New folder\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.csproj.AssemblyReference.cache
+E:\CRM Management\New folder\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.csproj.CoreCompileInputs.cache
+E:\CRM Management\New folder\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.csproj.CopyComplete
+E:\CRM Management\New folder\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.dll
+E:\CRM Management\New folder\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.pdb
+C:\Aniket Dange\Project\CRMManagement\CRM.DAL\bin\Debug\CRM.DAL.dll.config
+C:\Aniket Dange\Project\CRMManagement\CRM.DAL\bin\Debug\CRM.DAL.dll
+C:\Aniket Dange\Project\CRMManagement\CRM.DAL\bin\Debug\CRM.DAL.pdb
+C:\Aniket Dange\Project\CRMManagement\CRM.DAL\bin\Debug\CRM.Models.dll
+C:\Aniket Dange\Project\CRMManagement\CRM.DAL\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Aniket Dange\Project\CRMManagement\CRM.DAL\bin\Debug\System.Web.Helpers.dll
+C:\Aniket Dange\Project\CRMManagement\CRM.DAL\bin\Debug\System.Web.Mvc.dll
+C:\Aniket Dange\Project\CRMManagement\CRM.DAL\bin\Debug\System.Web.Razor.dll
+C:\Aniket Dange\Project\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Aniket Dange\Project\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.dll
+C:\Aniket Dange\Project\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Aniket Dange\Project\CRMManagement\CRM.DAL\bin\Debug\CRM.Models.pdb
+C:\Aniket Dange\Project\CRMManagement\CRM.DAL\bin\Debug\CRM.Models.dll.config
+C:\Aniket Dange\Project\CRMManagement\CRM.DAL\bin\Debug\System.Web.Helpers.xml
+C:\Aniket Dange\Project\CRMManagement\CRM.DAL\bin\Debug\System.Web.Mvc.xml
+C:\Aniket Dange\Project\CRMManagement\CRM.DAL\bin\Debug\System.Web.Razor.xml
+C:\Aniket Dange\Project\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.xml
+C:\Aniket Dange\Project\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Aniket Dange\Project\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Aniket Dange\Project\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.csproj.AssemblyReference.cache
+C:\Aniket Dange\Project\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.csproj.CoreCompileInputs.cache
+C:\Aniket Dange\Project\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.csproj.Up2Date
+C:\Aniket Dange\Project\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.dll
+C:\Aniket Dange\Project\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.pdb
+C:\Santosh\Projects\CRMManagement\CRM.DAL\bin\Debug\CRM.DAL.dll.config
+C:\Santosh\Projects\CRMManagement\CRM.DAL\bin\Debug\CRM.DAL.dll
+C:\Santosh\Projects\CRMManagement\CRM.DAL\bin\Debug\CRM.DAL.pdb
+C:\Santosh\Projects\CRMManagement\CRM.DAL\bin\Debug\CRM.Models.dll
+C:\Santosh\Projects\CRMManagement\CRM.DAL\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Santosh\Projects\CRMManagement\CRM.DAL\bin\Debug\System.Web.Helpers.dll
+C:\Santosh\Projects\CRMManagement\CRM.DAL\bin\Debug\System.Web.Mvc.dll
+C:\Santosh\Projects\CRMManagement\CRM.DAL\bin\Debug\System.Web.Razor.dll
+C:\Santosh\Projects\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Santosh\Projects\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.dll
+C:\Santosh\Projects\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Santosh\Projects\CRMManagement\CRM.DAL\bin\Debug\CRM.Models.pdb
+C:\Santosh\Projects\CRMManagement\CRM.DAL\bin\Debug\CRM.Models.dll.config
+C:\Santosh\Projects\CRMManagement\CRM.DAL\bin\Debug\System.Web.Helpers.xml
+C:\Santosh\Projects\CRMManagement\CRM.DAL\bin\Debug\System.Web.Mvc.xml
+C:\Santosh\Projects\CRMManagement\CRM.DAL\bin\Debug\System.Web.Razor.xml
+C:\Santosh\Projects\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.xml
+C:\Santosh\Projects\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Santosh\Projects\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Santosh\Projects\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.csproj.AssemblyReference.cache
+C:\Santosh\Projects\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.csproj.CoreCompileInputs.cache
+C:\Santosh\Projects\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.csproj.Up2Date
+C:\Santosh\Projects\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.dll
+C:\Santosh\Projects\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.pdb
+C:\Aniket Dange\CRMManagement\CRM.DAL\bin\Debug\CRM.DAL.dll.config
+C:\Aniket Dange\CRMManagement\CRM.DAL\bin\Debug\CRM.DAL.dll
+C:\Aniket Dange\CRMManagement\CRM.DAL\bin\Debug\CRM.DAL.pdb
+C:\Aniket Dange\CRMManagement\CRM.DAL\bin\Debug\CRM.Models.dll
+C:\Aniket Dange\CRMManagement\CRM.DAL\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Aniket Dange\CRMManagement\CRM.DAL\bin\Debug\System.Web.Helpers.dll
+C:\Aniket Dange\CRMManagement\CRM.DAL\bin\Debug\System.Web.Mvc.dll
+C:\Aniket Dange\CRMManagement\CRM.DAL\bin\Debug\System.Web.Razor.dll
+C:\Aniket Dange\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Aniket Dange\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.dll
+C:\Aniket Dange\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Aniket Dange\CRMManagement\CRM.DAL\bin\Debug\CRM.Models.pdb
+C:\Aniket Dange\CRMManagement\CRM.DAL\bin\Debug\CRM.Models.dll.config
+C:\Aniket Dange\CRMManagement\CRM.DAL\bin\Debug\System.Web.Helpers.xml
+C:\Aniket Dange\CRMManagement\CRM.DAL\bin\Debug\System.Web.Mvc.xml
+C:\Aniket Dange\CRMManagement\CRM.DAL\bin\Debug\System.Web.Razor.xml
+C:\Aniket Dange\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.xml
+C:\Aniket Dange\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Aniket Dange\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Aniket Dange\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.csproj.AssemblyReference.cache
+C:\Aniket Dange\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.csproj.CoreCompileInputs.cache
+C:\Aniket Dange\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.csproj.Up2Date
+C:\Aniket Dange\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.dll
+C:\Aniket Dange\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.pdb
+E:\CRM Management\DM\CRMManagement\CRM.DAL\bin\Debug\CRM.DAL.dll.config
+E:\CRM Management\DM\CRMManagement\CRM.DAL\bin\Debug\CRM.DAL.dll
+E:\CRM Management\DM\CRMManagement\CRM.DAL\bin\Debug\CRM.DAL.pdb
+E:\CRM Management\DM\CRMManagement\CRM.DAL\bin\Debug\CRM.Models.dll
+E:\CRM Management\DM\CRMManagement\CRM.DAL\bin\Debug\EZMasterSetup.dll
+E:\CRM Management\DM\CRMManagement\CRM.DAL\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\CRM Management\DM\CRMManagement\CRM.DAL\bin\Debug\System.Web.Helpers.dll
+E:\CRM Management\DM\CRMManagement\CRM.DAL\bin\Debug\System.Web.Mvc.dll
+E:\CRM Management\DM\CRMManagement\CRM.DAL\bin\Debug\System.Web.Razor.dll
+E:\CRM Management\DM\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\CRM Management\DM\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.dll
+E:\CRM Management\DM\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.Razor.dll
+E:\CRM Management\DM\CRMManagement\CRM.DAL\bin\Debug\CRM.Models.pdb
+E:\CRM Management\DM\CRMManagement\CRM.DAL\bin\Debug\CRM.Models.dll.config
+E:\CRM Management\DM\CRMManagement\CRM.DAL\bin\Debug\EZMasterSetup.pdb
+E:\CRM Management\DM\CRMManagement\CRM.DAL\bin\Debug\System.Web.Helpers.xml
+E:\CRM Management\DM\CRMManagement\CRM.DAL\bin\Debug\System.Web.Mvc.xml
+E:\CRM Management\DM\CRMManagement\CRM.DAL\bin\Debug\System.Web.Razor.xml
+E:\CRM Management\DM\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.xml
+E:\CRM Management\DM\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\CRM Management\DM\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.Razor.xml
+E:\CRM Management\DM\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.csproj.AssemblyReference.cache
+E:\CRM Management\DM\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.csproj.CoreCompileInputs.cache
+E:\CRM Management\DM\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.csproj.CopyComplete
+E:\CRM Management\DM\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.dll
+E:\CRM Management\DM\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.pdb
+E:\CRMManagement 3.0\CRMManagement\CRM.DAL\bin\Debug\CRM.DAL.dll.config
+E:\CRMManagement 3.0\CRMManagement\CRM.DAL\bin\Debug\CRM.DAL.dll
+E:\CRMManagement 3.0\CRMManagement\CRM.DAL\bin\Debug\CRM.DAL.pdb
+E:\CRMManagement 3.0\CRMManagement\CRM.DAL\bin\Debug\CRM.Models.dll
+E:\CRMManagement 3.0\CRMManagement\CRM.DAL\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\CRMManagement 3.0\CRMManagement\CRM.DAL\bin\Debug\System.Web.Helpers.dll
+E:\CRMManagement 3.0\CRMManagement\CRM.DAL\bin\Debug\System.Web.Mvc.dll
+E:\CRMManagement 3.0\CRMManagement\CRM.DAL\bin\Debug\System.Web.Razor.dll
+E:\CRMManagement 3.0\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\CRMManagement 3.0\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.dll
+E:\CRMManagement 3.0\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.Razor.dll
+E:\CRMManagement 3.0\CRMManagement\CRM.DAL\bin\Debug\CRM.Models.pdb
+E:\CRMManagement 3.0\CRMManagement\CRM.DAL\bin\Debug\CRM.Models.dll.config
+E:\CRMManagement 3.0\CRMManagement\CRM.DAL\bin\Debug\System.Web.Helpers.xml
+E:\CRMManagement 3.0\CRMManagement\CRM.DAL\bin\Debug\System.Web.Mvc.xml
+E:\CRMManagement 3.0\CRMManagement\CRM.DAL\bin\Debug\System.Web.Razor.xml
+E:\CRMManagement 3.0\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.xml
+E:\CRMManagement 3.0\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\CRMManagement 3.0\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.Razor.xml
+E:\CRMManagement 3.0\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.csproj.AssemblyReference.cache
+E:\CRMManagement 3.0\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.csproj.CoreCompileInputs.cache
+E:\CRMManagement 3.0\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.csproj.CopyComplete
+E:\CRMManagement 3.0\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.dll
+E:\CRMManagement 3.0\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.pdb
+E:\CRM Management\CRMManagement\CRM.DAL\bin\Debug\CRM.DAL.dll.config
+E:\CRM Management\CRMManagement\CRM.DAL\bin\Debug\CRM.DAL.dll
+E:\CRM Management\CRMManagement\CRM.DAL\bin\Debug\CRM.DAL.pdb
+E:\CRM Management\CRMManagement\CRM.DAL\bin\Debug\CRM.Models.dll
+E:\CRM Management\CRMManagement\CRM.DAL\bin\Debug\EZMasterSetup.dll
+E:\CRM Management\CRMManagement\CRM.DAL\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\CRM Management\CRMManagement\CRM.DAL\bin\Debug\System.Web.Helpers.dll
+E:\CRM Management\CRMManagement\CRM.DAL\bin\Debug\System.Web.Mvc.dll
+E:\CRM Management\CRMManagement\CRM.DAL\bin\Debug\System.Web.Razor.dll
+E:\CRM Management\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\CRM Management\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.dll
+E:\CRM Management\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.Razor.dll
+E:\CRM Management\CRMManagement\CRM.DAL\bin\Debug\CRM.Models.pdb
+E:\CRM Management\CRMManagement\CRM.DAL\bin\Debug\CRM.Models.dll.config
+E:\CRM Management\CRMManagement\CRM.DAL\bin\Debug\System.Web.Helpers.xml
+E:\CRM Management\CRMManagement\CRM.DAL\bin\Debug\System.Web.Mvc.xml
+E:\CRM Management\CRMManagement\CRM.DAL\bin\Debug\System.Web.Razor.xml
+E:\CRM Management\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.xml
+E:\CRM Management\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\CRM Management\CRMManagement\CRM.DAL\bin\Debug\System.Web.WebPages.Razor.xml
+E:\CRM Management\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.csproj.AssemblyReference.cache
+E:\CRM Management\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.csproj.CoreCompileInputs.cache
+E:\CRM Management\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.csproj.CopyComplete
+E:\CRM Management\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.dll
+E:\CRM Management\CRMManagement\CRM.DAL\obj\Debug\CRM.DAL.pdb

@@ -1,0 +1,277 @@
+﻿
+@model EZMasterSetup.clsControlsVM
+@{
+
+    var sectionname = "heading";
+    var intCount = 0;
+    var intHeaderRecord = 0;
+
+    var intRowNumber = 0;
+    var strVar = "";
+    int intVar = 0;
+    double dblVar = 0;
+
+}
+<style>
+    /* Set the height and width for the accordion container */
+    .accordion-container {
+        height: 300px;
+        width: 400px;
+        overflow: auto; /* Enable scrolling when the content exceeds the container dimensions */
+    }
+
+    /* Style for accordion headers */
+    .accordion-header {
+        background-color: #f1f1f1;
+        padding: 10px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        text-align: left;
+        width: 100%;
+    }
+
+    /* Style for accordion content */
+    .accordion-content {
+        padding: 10px;
+        display: none;
+        border-top: 1px solid #ccc;
+        width: 100%;
+    }
+</style>
+
+<body>
+
+
+    <div class="accordion col-md-12 " id="accordionExample">
+        @if (Model.commonEditDisplay == false)
+        {
+            foreach (var item in Model.sectionMaster.Distinct())
+            {
+                <div class="card border-info mb-3 col-md-12">
+                    <div class="card-header border-info mb-3" id="heading@(item.SectionCode)">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse@(item.SectionCode)" aria-expanded="true" aria-controls="collapse@(item.SectionCode)">
+                                @item.Description
+                            </button>
+                        </h5>
+                    </div>
+                    @if (item.isApplicableForTable == 0)
+                    {
+                        <div id="collapse@(item.SectionCode)" class="collapse show" aria-labelledby="heading@(item.SectionCode)" data-parent="#accordionExample">
+                            <div class="card-body ">
+                                @*Printing All Headers*@
+                                @foreach (var control in Model.controls.Where(e => e.SectionCode == item.SectionCode && e.isApplicableForTable == 0))
+                                {
+                                    intHeaderRecord = intHeaderRecord + 1;
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            @Html.Label(control.LableName)
+                                        </div>
+
+
+                                        @if (control.ControlType.ToLower() == "TextBox".ToLower())
+                                        {
+                                            strVar = control.value != null ? control.value.ToString() : string.Empty;
+                                            <div class="col-md-8">
+                                                @Html.TextBox(control.FieldName, strVar, new { @class = "form-control" })
+                                            </div>
+                                        }
+                                        @if (control.ControlType.ToLower() == "Date".ToLower())
+                                        {
+                                            strVar = control.value;
+                                            <div class="col-md-8">
+                                                @Html.TextBox(control.FieldName, DateTime.Now.ToString("yyyy-MM-dd"), new { @class = "form-control", @type = "date" })
+                                            </div>
+                                        }
+                                        @if (control.ControlType.ToLower() == "DropDownList".ToLower())
+                                        {
+                                            strVar = control.value;
+                                            <div class="col-md-8">
+                                                @*@Html.DropDownList(control.FieldName, control.listValues, "Select an option", new { @class = "form-control js-example-tags", @value = strVar })*@
+                                                @Html.DropDownList(control.FieldName,
+                                                new SelectList(control.listValues, "Value", "Text", strVar),
+                                                "Select an option",
+                                                new { @class = "form-control js-example-tags" })
+                                            </div>
+
+                                        }
+                                        @if (control.ControlType.ToLower() == "TextArea".ToLower())
+                                        {
+                                            strVar = control.value;
+                                            <div class="col-md-8">
+                                                @Html.TextArea(control.FieldName, strVar, new { @class = "form-control" })
+                                            </div>
+                                        }
+                                        @if (control.ControlType.ToLower() == "CheckBox".ToLower())
+                                        {
+                                            intVar = (control.value == null ? 0 : control.value);
+                                            <div class="col-md-8">
+                                                @Html.CheckBox(control.FieldName, (intVar == 0 ? false : true))
+                                            </div>
+                                        }
+                                        @if (control.ControlType.ToLower() == "ListBox".ToLower())
+                                        {
+                                            strVar = control.value;
+                                            <div class="col-md-8">
+                                                @Html.ListBox(control.FieldName, new SelectList(control.listValues, "Value", "Text"))
+                                            </div>
+                                        }
+                                        @if (control.ControlType.ToLower() == "RadioButton".ToLower())
+                                        {
+                                            <div class="col-md-8">
+                                                @Html.RadioButton(control.FieldName, "1", new { @class = "form-control" })
+                                                @Html.RadioButton(control.FieldName, "2", new { @class = "form-control" })
+                                                @Html.RadioButton(control.FieldName, "3", new { @class = "form-control" })
+                                            </div>
+                                        }
+
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        intCount = 0;
+                        <div id="collapse@(item.SectionCode)" class="collapse show" aria-labelledby="heading@(item.SectionCode)" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <table class="table table-hover" id="Table@(item.SectionCode)">
+                                    <thead>
+                                        <tr>
+                                            @foreach (var col in Model.ezTemplateMaster.Distinct().Where(m => m.SectionCode == item.SectionCode))
+                                            {
+                                                @*if (col.isHidden == 1)
+                                                    {
+                                                        <th scope="col" hidden>@col.LableName</th>
+                                                    }
+                                                    else
+                                                    {*@
+                                                <th scope="col">@col.LableName</th>
+                                                @* } *@
+                                                intCount = intCount + 1;
+                                            }
+                                        </tr>
+                                    </thead>
+                                    <tbody id="@(item.SectionCode)">
+                                        @{
+                                            var intTotalRecordForSection = Model.controls.Where(m => m.SectionCode == item.SectionCode).Count();
+                                            var intTotalRecord = intTotalRecordForSection / @intCount;// ((Model.controls.Count- intHeaderRecord) / @intCount);
+                                            var intCurRecordNumber = 0;
+                                            var intColumnCount = 0;
+                                        }
+
+                                        @for (int intRecord = 1; intRecord <= intTotalRecord; intRecord++)
+                                        {
+
+                                            <tr>
+                                                @for (int i = intCurRecordNumber; intCurRecordNumber <= Model.controls.Where(m => m.SectionCode == item.SectionCode).Count() + intHeaderRecord; i++)
+                                                {
+
+
+                                                    var control = Model.controls[i];
+                                                    if (item.SectionCode == control.SectionCode)
+                                                    {
+                                                        //foreach (var Detailcontrol in Model.controls.Where(e => e.SectionCode == item.SectionCode && e.isApplicableForTable == 1))
+                                                        //{
+                                                        if (control.ControlType.ToLower() == "TextBox".ToLower())
+                                                        {
+                                                            strVar = control.value != null ? control.value.ToString() : string.Empty;
+                                                            <td data-search=@strVar>
+                                                                @Html.TextBox(control.FieldName, strVar, new { @class = "form-control", @id = @item.SectionCode + "_" + control.FieldName + "_" + i })
+                                                            </td>
+                                                        }
+                                                        if (control.ControlType.ToLower() == "Date".ToLower())
+                                                        {
+                                                            strVar = control.value;
+                                                            <td data-search=@strVar>
+                                                                @Html.TextBox(control.FieldName, DateTime.Now.ToString("yyyy-MM-dd"), new { @class = "form-control", @type = "date", @id = @item.SectionCode + "_" + control.FieldName + "_" + i })
+                                                            </td>
+                                                        }
+                                                        if (control.ControlType.ToLower() == "DropDownList".ToLower())
+                                                        {
+                                                            strVar = control.value;
+                                                            <td data-search=@strVar>
+                                                                @*@Html.DropDownList(control.FieldName, control.listValues, "Select an option", new { @class = "form-control js-example-tags", @value = strVar })*@
+                                                                @Html.DropDownList(control.FieldName,
+                                                                 new SelectList(control.listValues, "Value", "Text", strVar),
+                                                                 "Select an option",
+                                                                 new { @class = "form-control js-example-tags", @id = @item.SectionCode + "_" + control.FieldName + "_" + i })
+                                                            </td>
+
+                                                        }
+                                                        if (control.ControlType.ToLower() == "TextArea".ToLower())
+                                                        {
+                                                            strVar = control.value;
+                                                            <td data-search=@strVar>
+                                                                @Html.TextArea(control.FieldName, strVar, new { @class = "form-control", @id = @item.SectionCode + "_" + control.FieldName + "_" + i })
+                                                            </td>
+                                                        }
+                                                        if (control.ControlType.ToLower() == "CheckBox".ToLower())
+                                                        {
+                                                            intVar = (control.value == null ? 0 : control.value);
+                                                            <td data-search=@intVar>
+                                                                @Html.CheckBox(control.FieldName, (intVar == 0 ? false : true), new { @id = @item.SectionCode + "_" + control.FieldName + "_" + i })
+                                                            </td>
+                                                        }
+                                                        if (control.ControlType.ToLower() == "ListBox".ToLower())
+                                                        {
+                                                            strVar = control.value;
+                                                            <td data-search=@strVar>
+                                                                @Html.ListBox(control.FieldName, new SelectList(control.listValues, "Value", "Text"), new { @class = "form-control", @id = @item.SectionCode + "_" + control.FieldName + "_" + i })
+                                                            </td>
+                                                        }
+                                                        if (control.ControlType.ToLower() == "RadioButton".ToLower())
+                                                        {
+                                                            <td>
+                                                                @Html.RadioButton(control.FieldName, "1", new { @class = "form-control", @id = @item.SectionCode + "_" + control.FieldName + "_" + i })
+                                                                @Html.RadioButton(control.FieldName, "2", new { @class = "form-control", @id = @item.SectionCode + "_" + control.FieldName + "_" + i })
+                                                                @Html.RadioButton(control.FieldName, "3", new { @class = "form-control", @id = @item.SectionCode + "_" + control.FieldName + "_" + i })
+                                                            </td>
+                                                        }
+
+                                                        intColumnCount = intColumnCount + 1;
+
+
+                                                    }
+
+                                                    intCurRecordNumber++;
+                                                    //Checking condition for column count reach to end or equal to total columns
+                                                    if (intCount == intColumnCount)
+                                                    {
+                                                        intColumnCount = 0;
+                                                        break;
+                                                    }
+
+                                                }
+                                            </tr>
+                                        }
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    }
+
+                </div>
+            }
+        }
+        else
+        {
+            @Html.Partial("ForEditDisplayRecordView", Model)
+        }
+
+    </div>
+    @*Include the Select2 CSS file*@
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+    @*Include the Select2 JS file*@
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+</body>
+
+
+<script>
+    $(".js-example-tags").select2({
+        tags: true
+    });
+</script>

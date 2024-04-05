@@ -1,0 +1,36 @@
+﻿@model EZMasterSetup.clsControlsVM
+@{
+
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+    //var userName = Model.userRequest.UserName.ToString();
+    //var SectionId = Model.userRequest.SectionId;
+    //var oprType = Model.oprType;
+
+    var userName = (string)Session["UserName"];
+    var companyCode = (string)Session["CompanyCode"];
+    var FYear = (string)Session["FYear"];
+    var SectionId = @ViewBag.SectionId;
+    var oprType = @ViewBag.oprType;
+
+    var editRecord = Model.userInformation.Edit;
+    var createRecord = Model.userInformation.Create;
+    var deleteRecord = Model.userInformation.Delete;
+    var saveRecord = Model.userInformation.Save;
+}
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <input type="text" id="gblUserName" value="@userName" hidden />
+    <input type="text" id="gblcompanyCode" value="@companyCode" hidden />
+    <input type="text" id="gblFYear" value="@FYear" hidden />
+    <input type="text" id="gblSectionId" value="@SectionId" hidden />
+    <input type="text" id="gbloprTypeId" value="@oprType" hidden />
+
+    <input type="text" id="gbleditRecord" value="@editRecord" hidden />
+    <input type="text" id="gblcreateRecord" value="@createRecord" hidden />
+    <input type="text" id="gbldeleteRecord" value="@deleteRecord" hidden />
+    <input type="text" id="gblsaveRecord" value="@saveRecord" hidden />
+
+    @Html.Partial("UserView", Model)
+    @Html.Partial("CommonButtons");
+}

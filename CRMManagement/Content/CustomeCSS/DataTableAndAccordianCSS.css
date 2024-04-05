@@ -1,0 +1,119 @@
+﻿/*body {
+}
+Set the height and width for the accordion container
+.accordion-container {
+    padding: 10px;
+    height: 300px;
+    width: auto;
+    overflow: auto;*/
+    /*Enable scrolling when the content exceeds the container dimensions*/
+/*}
+
+ Style for accordion headers 
+.accordion-header {
+    background-color: black;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    text-align: left;
+    width: 100%;
+}
+
+ Style for accordion content 
+.accordion-content {
+    padding: 10px;
+    display: none;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    overflow-block: scroll;
+
+}
+
+.card {
+    background-color: white;
+    color: #1824aa;
+}
+
+.card-header, .btn-link {
+    color: antiquewhite;
+    background-color: #164863;
+}
+
+table, card-body {
+    font-family: Arial, sans-serif;
+    color: antiquewhite;
+    margin: 0px;
+    background-color: white;
+    overflow-block: scroll;
+}
+
+#dataTableData {
+    width: 100%;
+    color: black;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow-block: scroll;
+}
+
+    #dataTableData th, #dataTableData td {
+        border: 1px solid #ddd;
+        padding: 1px;
+        text-align: left;
+        vertical-align: middle;
+        margin-block: auto;
+       
+    }
+
+    #dataTableData th {
+        background-color: #f2f2f2;
+    }
+
+    #dataTableData tbody tr:hover {
+        background-color: #f5f5f5;
+    }
+
+ Custom styles for DataTables search box 
+.dataTables_filter {
+    text-align: right;
+    float: right;
+    width: 100%;
+}
+
+    .dataTables_filter input {
+        width: 500px;  Set the width as needed 
+        padding: 6px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding-left: 40px;
+    }
+
+ Custom styles for DataTables pagination 
+.dataTables_paginate {
+    margin-top: 10px;
+}
+
+    .dataTables_paginate a {
+        padding: 1px 3px;
+        margin: 0 3px;
+        border: 1px solid #ddd;
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+        background-color: #f8f8f8;
+        border-radius: 3px;
+    }
+
+        .dataTables_paginate a:hover {
+            background-color: #e2e2e2;
+        }
+
+    .dataTables_paginate .current {
+        background-color: #4CAF50;
+        color: white;
+    }*/
+
+

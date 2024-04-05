@@ -1,0 +1,16 @@
+﻿@model CRM.ModelsVM.CRM.clsCRMUserMasterVM
+
+@{
+
+    Layout = "~/Views/Shared/CRM/_CRMLayout.cshtml";
+}
+<body>
+    @Html.Partial("~/Views/Shared/CRM/CRMUserMaster/_CRMUserMasterCreateEditDelete.cshtml", Model)
+
+</body>
+
+
+@section Scripts {
+    <script src="~/Scripts/CustomScript/commonToolbar.js?v=timestamp"></script>
+    <script src="~/Scripts/CustomScript/CRM/CRMUserMasterJS.js?v=timestamp"></script>
+}

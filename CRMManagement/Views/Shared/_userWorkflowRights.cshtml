@@ -1,0 +1,62 @@
+﻿@model IEnumerable<EZMasterSetup.clsUserWiseWorkflow>
+
+@*<div class="menu_section">
+        @foreach (var group in Model.GroupBy(e => e.ModuleCode))
+        {
+            <ul class="nav side-menu">
+                <li>
+                    <a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                        @foreach (var item in Model.Where(e => e.ModuleCode == group.Key))
+                        {
+                            <li>
+                                <a href="@Url.Action("Index",item.ControllerName, new {
+                                    CmpyCode = item.CmpyCode,
+                                    Id = item.WorkflowCode,
+                                    UserName = item.UserName
+                                })">
+                                    @item.WorkflowDesc
+                                </a>
+                            </li>
+                        }
+                    </ul>
+                </li>
+            </ul>
+        }
+    </div>*@
+
+
+
+
+
+
+
+
+<li class="nav-item menu-open">
+    @foreach (var group in Model.GroupBy(e => e.ModuleDesc))
+    {
+        <a href="#" class="nav-link">
+            <i class="nav-icon fas fa-circle"></i>
+            <p>
+                @group.Key
+                <i class="right fas fa-angle-left"></i>
+                <span class="badge badge-info right">@group.Count()</span>
+            </p>
+        </a>
+        <ul class="nav nav-treeview" style="display:none;">
+            @foreach (var item in Model.Where(e => e.ModuleDesc == group.Key))
+            {
+                <li class="nav-item">
+                    <a href="@Url.Action("Index",item.ControllerName, new {
+                        CmpyCode = item.CmpyCode,
+                        Id = item.WorkflowCode,
+                        UserName = item.UserName
+                    })">
+                    <i class="far fa-circle nav-icon"></i>
+                    @item.WorkflowDesc
+                  </a>
+                </li>
+            }
+        </ul>
+    }
+</li>

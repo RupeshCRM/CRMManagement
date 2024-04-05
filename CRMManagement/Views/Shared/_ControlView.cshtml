@@ -1,0 +1,66 @@
+﻿@model EZMasterSetup.clsControls
+
+@{
+    var strVar = "";
+    object objSTR ;
+    int intVar = 0;
+
+}
+
+@if (Model.isApplicableForTable == 0)
+{
+    @Html.Label(Model.LableName)
+}
+@switch (Model.ControlType.ToLower())
+{
+    case "textbox":
+        strVar = Model.value != null ? Model.value.ToString() : string.Empty;
+        @Html.TextBox(Model.FieldName, strVar, new { @class = "form-control" })
+        break;
+    case "date":
+        if (Model.value == null)
+        {
+            @Html.TextBox(Model.FieldName, DateTime.Now.ToString("yyyy-MM-dd"), new { @class = "form-control", @type = "date", @value = DateTime.Now.ToString("yyyy-MM-dd") })
+        }
+        else
+        {
+            @Html.TextBox(Model.FieldName, DateTime.Now.ToString("yyyy-MM-dd"), new { @class = "form-control", @type = "date", @value = Model.value.ToString("yyyy-MM-dd") })
+        }
+        break;
+    case "dropdownlist":
+        objSTR = (Model.value == null ? 0 : Model.value);
+        objSTR = Convert.ToString(Model.value);
+        //objSTR = ((objSTR != DBNull.Value) ? (string)objSTR : objSTR);
+        @Html.DropDownList(Model.FieldName,
+        new SelectList(Model.listValues, "Value", "Text", objSTR),
+        "Select an option",
+        new { @class = "form-control select2", @style = "width: 100%;" })
+        break;
+    case "textarea":
+        strVar = Model.value;
+        @Html.TextArea(Model.FieldName, strVar, new { @class = "form-control" })
+        break;
+    case "checkbox":
+        intVar = (Model.value == null ? 0 : Model.value);
+        @Html.CheckBox(Model.FieldName, (intVar == 0 ? false : true))
+        @*<p>It's Friday</p>*@
+        break;
+    case "listbox":
+        strVar = Model.value;
+        @Html.ListBox(Model.FieldName, new SelectList(Model.listValues, "Value", "Text"), new { @class = "form-control" })
+        break;
+    case "radiobutton":
+        strVar = Model.value;
+        <fieldset>
+            @foreach (var option in Model.listValues)
+            {
+                <label>
+                    @Html.RadioButton(Model.FieldName, option.Value, strVar == "Option1") @option.Text
+                </label>
+            }
+        </fieldset>
+        break;
+    default:
+        @*<p>Invalid </p>*@
+        break;
+}

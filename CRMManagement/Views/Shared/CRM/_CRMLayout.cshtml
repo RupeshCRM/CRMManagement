@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRM Management</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet" href="~/Content/plugins/fontawesome-free/css/all.min.css">
+
+
+    <link rel="stylesheet" href="~/Content/dist/css/adminlte.min.css?v=3.2.0">
+
+   
+    @*<script nonce="5b627160-d793-4b3c-974e-57cb2928aeb9">try { (function (w, d) { !function (j, k, l, m) { j[l] = j[l] || {}; j[l].executed = []; j.zaraz = { deferred: [], listeners: [] }; j.zaraz.q = []; j.zaraz._f = function (n) { return async function () { var o = Array.prototype.slice.call(arguments); j.zaraz.q.push({ m: n, a: o }) } }; for (const p of ["track", "set", "debug"]) j.zaraz[p] = j.zaraz._f(p); j.zaraz.init = () => { var q = k.getElementsByTagName(m)[0], r = k.createElement(m), s = k.getElementsByTagName("title")[0]; s && (j[l].t = k.getElementsByTagName("title")[0].text); j[l].x = Math.random(); j[l].w = j.screen.width; j[l].h = j.screen.height; j[l].j = j.innerHeight; j[l].e = j.innerWidth; j[l].l = j.location.href; j[l].r = k.referrer; j[l].k = j.screen.colorDepth; j[l].n = k.characterSet; j[l].o = (new Date).getTimezoneOffset(); if (j.dataLayer) for (const w of Object.entries(Object.entries(dataLayer).reduce(((x, y) => ({ ...x[1], ...y[1] })), {}))) zaraz.set(w[0], w[1], { scope: "page" }); j[l].q = []; for (; j.zaraz.q.length;) { const z = j.zaraz.q.shift(); j[l].q.push(z) } r.defer = !0; for (const A of [localStorage, sessionStorage]) Object.keys(A || {}).filter((C => C.startsWith("_zaraz_"))).forEach((B => { try { j[l]["z_" + B.slice(7)] = JSON.parse(A.getItem(B)) } catch { j[l]["z_" + B.slice(7)] = A.getItem(B) } })); r.referrerPolicy = "origin"; r.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(j[l]))); q.parentNode.insertBefore(r, q) };["complete", "interactive"].includes(k.readyState) ? zaraz.init() : j.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, "zarazData", "script"); })(window, document) } catch (e) { throw fetch("/cdn-cgi/zaraz/t"), e; };</script>*@
+    <link rel="stylesheet" href="~/Content/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="~/Content/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <link rel="stylesheet" href="~/Content/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+    <style>
+        .custom-select {
+            width: 100%;
+            border: 0; /* Remove border */
+            box-shadow: none; /* Remove box shadow */
+        }
+    </style>
+</head>
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+
+        @Html.Partial("~/Views/Shared/CRM/_CRMNavigation.cshtml")
+        <div class="content-wrapper">
+
+            <section class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1>Profile</h1>
+                        </div>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                @*<li class="breadcrumb-item"><a href="#">@Html.RenderPartial("")</a></li>*@
+                                <li class="breadcrumb-item active">User Profile</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content">
+                @RenderBody()
+            </section>
+
+        </div>
+
+        @*<footer class="main-footer">
+            <div class="float-right d-none d-sm-block">
+                <b>Version</b> 3.2.0
+            </div>
+            <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+        </footer>*@
+
+        <aside class="control-sidebar control-sidebar-dark">
+        </aside>
+
+    </div>
+
+    <script src="~/Content/plugins/jquery/jquery.min.js"></script>
+    <script src="~/Content/dist/js/demo.js"></script>
+
+    <script src="~/Content/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="~/Content/dist/js/adminlte.min.js?v=3.2.0"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script src="~/Content/plugins/select2/js/select2.full.min.js"></script>
+    <script src="~/Scripts/CustomScript/EzMessagesJS.js"></script>
+    <script src="~/Scripts/CustomScript/userRightsJS.js"></script>
+    <script src="~/Scripts/CustomScript/DocumentAttachmentMaster/DocumentAttachmentJS.js"></script>
+
+    @*<script src="~/Scripts/CustomScript/CommonControlsType/MaskEditor.js?V=timestamp"></script>*@
+    <script>
+        $('.select2').select2()
+        if ($("#gbloprTypeId").val() == 'Edit' || $("#gbloprTypeId").val() == 'Create') {
+            $("#btnCommonDelete").hide();
+        }
+        else {
+            $("#btnCommonSave").hide();
+        }
+        //$(".js-example-tags").select2({
+        //    tags: true
+        //    //,
+        //    //minimumInputLength: 0,
+        //    //placeholder: "Select an option", // Text displayed when no item is selected
+        //    ////allowClear: true, // Adds a clear button to easily remove the selected option
+        //    ////closeOnSelect: true, // Closes the dropdown when an option is selected
+        //    ////width: "100%", // Set the width of the dropdown
+        //    ////dropdownAutoWidth: true, // Adjusts the dropdown width based on the content
+        //    ////dropdownParent: $("#parent-container"), // Specifies the container where the dropdown will be appended
+        //    ////maximumSelectionLength: 3, // Limits the maximum number of selected options
+        //    //theme: "classic", // Choose a theme, e.g., "classic", "bootstrap", or create a custom theme
+        //    //language: {
+        //    //    noResults: function () {
+        //    //        return "No results found"; // Custom message when no results are found
+        //    //    }
+        //    //},
+        //    //escapeMarkup: function (markup) {
+        //    //    return markup; // Allows you to customize the escaping of markup
+        //    //}
+        //});
+       
+       
+    </script>
+    @RenderSection("Scripts", required: false)
+
+</body>
+</html>
