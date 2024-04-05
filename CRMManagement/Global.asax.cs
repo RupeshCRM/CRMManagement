@@ -10,7 +10,7 @@ namespace CRMManagement
 {
     public class MvcApplication : System.Web.HttpApplication
     {
-        protected void Application_Start()//Santosh test
+        protected void Application_Start()//rupesh test
         {
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
