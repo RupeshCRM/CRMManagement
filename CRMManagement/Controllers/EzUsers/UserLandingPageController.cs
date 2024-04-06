@@ -248,10 +248,26 @@ namespace CRMManagement.Controllers.EzUsers
         }
 
         public ActionResult NewHistory(clsCRMHistoryDetailVM CRMHistoryDetailVM) //
-        { 
+        {
+            try
+            {
+                clsCRMHistoryDetailBAL CRMHistoryDetailBAL=new clsCRMHistoryDetailBAL();
+                string UserName = (string)Session["UserName"];
+                string CompanyCode = (string)Session["CompanyCode"];
+                CRMHistoryDetailVM.CRMHistoryDetail.CmpyCode=CompanyCode;
+                CRMHistoryDetailVM.CRMHistoryDetail.UserName=UserName;
+                CRMHistoryDetailVM.CRMHistoryDetail.Dates=DateTime.Now;
+                CRMHistoryDetailBAL.Insert(CRMHistoryDetailVM.CRMHistoryDetail);
+                 return View(true);
+            }
+            catch (Exception ex)
+            {
+                return View(ex.Message);
+              
+            }
                 
         
-                return View("");
+               
         
         }
         

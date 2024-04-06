@@ -36,7 +36,9 @@ function RefreshDetail(Id) {
         data: { Id: Id },
         async: false,
         success: function (result) {
+
             $('#partialViewContainer').html(result);
+            $('#IdCurrentWorkflow').val(Id);
         },
         error: function (error) {
             // Handle error if needed
@@ -57,12 +59,11 @@ function SubmitFormSave(HistoryType) {
     if (HistoryType == 'Activity') {
         strActivityDescription = $("#txtNewActivity").val();
     }
-
+    
     var Header = {
         CmpyCode: $("#CmpyCode").val(),
         EntryType: HistoryType,
-        HistoryRef: '',
-        ReferenceNo: $("#idActivityText").val(),
+        DocReferenceNo: $("#IdCurrentWorkflow").val(),
         ActivityType: 'Call',
         ActivityDescription: strActivityDescription,
         UserName: $("#gblUserName").val()
@@ -93,12 +94,18 @@ function SubmitFormSave(HistoryType) {
         async: false,
         success: function (response) {
             //callIndexView(response);
-            alert(SaveSuccessMessage);
+           /* alert(SaveSuccessMessage);*/
             //window.location.href = response.redirectUrl;
         },
         error: function (error) {
             // Handle error if needed
-            alert(SaveErrorMessage);
+            /*alert(SaveErrorMessage);*/
         }
     });
+
+
+ 
+    $("#txtNewTask").val('');
+    $("#txtNewActivity").val('');
+  
 }

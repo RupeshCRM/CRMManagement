@@ -192,3 +192,33 @@ E:\CRM Management\CRMManagement\CRM.BAL\obj\Debug\CRM.BAL.csproj.CoreCompileInpu
 E:\CRM Management\CRMManagement\CRM.BAL\obj\Debug\CRM.BAL.csproj.CopyComplete
 E:\CRM Management\CRMManagement\CRM.BAL\obj\Debug\CRM.BAL.dll
 E:\CRM Management\CRMManagement\CRM.BAL\obj\Debug\CRM.BAL.pdb
+C:\Users\Omsai\Desktop\CRMManagement\CRM.BAL\obj\Debug\CRM.BAL.csproj.CoreCompileInputs.cache
+E:\4.5\CRMManagement\CRM.BAL\obj\Debug\CRM.BAL.csproj.CoreCompileInputs.cache
+E:\4.5\CRMManagement\CRM.BAL\obj\Debug\CRM.BAL.csprojAssemblyReference.cache
+E:\4.5\CRMManagement\CRM.BAL\bin\Debug\CRM.BAL.dll.config
+E:\4.5\CRMManagement\CRM.BAL\bin\Debug\CRM.BAL.dll
+E:\4.5\CRMManagement\CRM.BAL\bin\Debug\CRM.BAL.pdb
+E:\4.5\CRMManagement\CRM.BAL\bin\Debug\CRM.DAL.dll
+E:\4.5\CRMManagement\CRM.BAL\bin\Debug\CRM.Models.dll
+E:\4.5\CRMManagement\CRM.BAL\bin\Debug\EZMasterSetup.dll
+E:\4.5\CRMManagement\CRM.BAL\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\4.5\CRMManagement\CRM.BAL\bin\Debug\System.Web.Helpers.dll
+E:\4.5\CRMManagement\CRM.BAL\bin\Debug\System.Web.Mvc.dll
+E:\4.5\CRMManagement\CRM.BAL\bin\Debug\System.Web.Razor.dll
+E:\4.5\CRMManagement\CRM.BAL\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\4.5\CRMManagement\CRM.BAL\bin\Debug\System.Web.WebPages.dll
+E:\4.5\CRMManagement\CRM.BAL\bin\Debug\System.Web.WebPages.Razor.dll
+E:\4.5\CRMManagement\CRM.BAL\bin\Debug\CRM.DAL.pdb
+E:\4.5\CRMManagement\CRM.BAL\bin\Debug\CRM.DAL.dll.config
+E:\4.5\CRMManagement\CRM.BAL\bin\Debug\CRM.Models.pdb
+E:\4.5\CRMManagement\CRM.BAL\bin\Debug\CRM.Models.dll.config
+E:\4.5\CRMManagement\CRM.BAL\bin\Debug\EZMasterSetup.pdb
+E:\4.5\CRMManagement\CRM.BAL\bin\Debug\System.Web.Helpers.xml
+E:\4.5\CRMManagement\CRM.BAL\bin\Debug\System.Web.Mvc.xml
+E:\4.5\CRMManagement\CRM.BAL\bin\Debug\System.Web.Razor.xml
+E:\4.5\CRMManagement\CRM.BAL\bin\Debug\System.Web.WebPages.xml
+E:\4.5\CRMManagement\CRM.BAL\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\4.5\CRMManagement\CRM.BAL\bin\Debug\System.Web.WebPages.Razor.xml
+E:\4.5\CRMManagement\CRM.BAL\obj\Debug\CRM.BAL.csproj.CopyComplete
+E:\4.5\CRMManagement\CRM.BAL\obj\Debug\CRM.BAL.dll
+E:\4.5\CRMManagement\CRM.BAL\obj\Debug\CRM.BAL.pdb

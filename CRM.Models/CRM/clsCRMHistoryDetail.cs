@@ -10,8 +10,8 @@ namespace CRM.Models.CRM
     {
         public string CmpyCode { get; set; }
         public string EntryType { get; set; }
-        public string HistoryRef { get; set; }
-        public string ReferenceNo { get; set; }
+        //public string HistoryRef { get; set; }
+        public string DocReferenceNo { get; set; }
         public DateTime Dates { get; set; }
         public string ActivityType { get; set; }
         public string ActivityDescription { get; set; }

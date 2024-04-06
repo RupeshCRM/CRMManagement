@@ -150,3 +150,27 @@ E:\CRM Management\CRMManagement\CRM.Models\obj\Debug\CRM.Models.csproj.CoreCompi
 E:\CRM Management\CRMManagement\CRM.Models\obj\Debug\CRM.Models.csproj.CopyComplete
 E:\CRM Management\CRMManagement\CRM.Models\obj\Debug\CRM.Models.dll
 E:\CRM Management\CRMManagement\CRM.Models\obj\Debug\CRM.Models.pdb
+C:\Users\Omsai\Desktop\CRMManagement\CRM.Models\obj\Debug\CRM.Models.csprojAssemblyReference.cache
+C:\Users\Omsai\Desktop\CRMManagement\CRM.Models\obj\Debug\CRM.Models.csproj.CoreCompileInputs.cache
+E:\4.5\CRMManagement\CRM.Models\obj\Debug\CRM.Models.csproj.CoreCompileInputs.cache
+E:\4.5\CRMManagement\CRM.Models\bin\Debug\CRM.Models.dll.config
+E:\4.5\CRMManagement\CRM.Models\bin\Debug\CRM.Models.dll
+E:\4.5\CRMManagement\CRM.Models\bin\Debug\CRM.Models.pdb
+E:\4.5\CRMManagement\CRM.Models\bin\Debug\EZMasterSetup.dll
+E:\4.5\CRMManagement\CRM.Models\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\4.5\CRMManagement\CRM.Models\bin\Debug\System.Web.Helpers.dll
+E:\4.5\CRMManagement\CRM.Models\bin\Debug\System.Web.Mvc.dll
+E:\4.5\CRMManagement\CRM.Models\bin\Debug\System.Web.Razor.dll
+E:\4.5\CRMManagement\CRM.Models\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\4.5\CRMManagement\CRM.Models\bin\Debug\System.Web.WebPages.dll
+E:\4.5\CRMManagement\CRM.Models\bin\Debug\System.Web.WebPages.Razor.dll
+E:\4.5\CRMManagement\CRM.Models\bin\Debug\EZMasterSetup.pdb
+E:\4.5\CRMManagement\CRM.Models\bin\Debug\System.Web.Helpers.xml
+E:\4.5\CRMManagement\CRM.Models\bin\Debug\System.Web.Mvc.xml
+E:\4.5\CRMManagement\CRM.Models\bin\Debug\System.Web.Razor.xml
+E:\4.5\CRMManagement\CRM.Models\bin\Debug\System.Web.WebPages.xml
+E:\4.5\CRMManagement\CRM.Models\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\4.5\CRMManagement\CRM.Models\bin\Debug\System.Web.WebPages.Razor.xml
+E:\4.5\CRMManagement\CRM.Models\obj\Debug\CRM.Models.csproj.CopyComplete
+E:\4.5\CRMManagement\CRM.Models\obj\Debug\CRM.Models.dll
+E:\4.5\CRMManagement\CRM.Models\obj\Debug\CRM.Models.pdb
