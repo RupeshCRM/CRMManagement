@@ -1,9 +1,79 @@
 ﻿@*@model List<CRM.Models.EzSystem.FileModel>*@
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 @using (Html.BeginForm("UploadFile", "FileUpload", FormMethod.Post, new { enctype = "multipart/form-data", id = "uploadForm" }))
 {
-    <input type="file" name="file" id="fileInput" />
-    <input type="button" value="Upload" onclick="uploadFile()" />
+    <div class="row">
+        <div class="col-md-12"><input type="file" name="file" id="fileInput" /></div>
+        @*<div class="col-md-12"><input type="button" value="Upload" onclick="uploadFile()" class="btn btn-outline-info"/></div>*@
+        
+        <div class="col-md-12">
+            <button class="btn btn-outline-info " onclick="uploadFile()" style="border-radius:0px;position:relative;top:10px;"><i class="fa fa-upload"></i> Upload</button>
+            </div>
+        </div>
+
 }
 
+<style>
+     btnupload {
+     position: relative;
+    border-radius: 0px;
+    top: 10px;
+}
+    input[type="file"] {
+  position: relative;
+}
+
+input[type="file"]::file-selector-button {
+  width: 136px;
+  color: transparent;
+}
+
+/* Faked label styles and icon */
+input[type="file"]::before {
+  position: absolute;
+  pointer-events: none;
+  top: 10px;
+  left: 16px;
+  height: 20px;
+  width: 20px;
+  content: "";
+  /*background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230964B0'%3E%3Cpath d='M18 15v3H6v-3H4v3c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-3h-2zM7 9l1.41 1.41L11 7.83V16h2V7.83l2.59 2.58L17 9l-5-5-5 5z'/%3E%3C/svg%3E");*/
+}
+
+input[type="file"]::after {
+  position: absolute;
+  pointer-events: none;
+  top: 9px;
+  left: 35px;
+  color: #17a2b8;
+  content: "Select File";
+}
+
+/* ------- From Step 1 ------- */
+
+/* file upload button */
+input[type="file"]::file-selector-button {
+  border-radius: 0px;
+  padding: 0 16px;
+  height: 40px;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid #17a2b8;
+  box-shadow: 0px 1px 0px rgba(0, 23, 162, 0);
+  margin-right: 16px;
+  transition: background-color 200ms;
+}
+
+/* file upload button hover state */
+input[type="file"]::file-selector-button:hover {
+  background-color: #f3f4f6;
+}
+
+/* file upload button active state */
+input[type="file"]::file-selector-button:active {
+  background-color: #e5e7eb;
+}
+
+/* ------------------------ */
+</style>
