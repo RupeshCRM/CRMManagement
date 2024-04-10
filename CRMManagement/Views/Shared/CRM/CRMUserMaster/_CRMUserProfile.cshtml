@@ -32,7 +32,7 @@
 
                     <h3 class="profile-username text-center">@Model.CRMUserMaster.Salutation @Model.CRMUserMaster.FirstName @Model.CRMUserMaster.LastName </h3>
                     <p class="text-muted text-center">@Model.CRMUserMaster.Notes</p>
-                    <ul class="list-group list-group-unbordered mb-3">
+                    @*<ul class="list-group list-group-unbordered mb-3">
                         <li class="list-group-item">
                             <b>Followers</b> <a class="float-right">1,322</a>
                         </li>
@@ -42,13 +42,15 @@
                         <li class="list-group-item">
                             <b>Friends</b> <a class="float-right">13,287</a>
                         </li>
-                    </ul>
+                    </ul>*@
 
                     <div> @Html.Partial("~/Views/Shared/EzUtility/_DocumentUpload.cshtml")</div>
                     @*<a href = "#" Class="btn btn-primary btn-block"><b>Follow</b></a>*@
                 </div>
 
             </div>
+
+           
 
 
         </div>
@@ -191,7 +193,7 @@
                                 <form Class="form-horizontal">
                                     <div Class="form-group row">
                                         <label for="inputName" class="col-sm-2 col-form-label">Target Type</label>
-                                        <div Class="input-group col-sm-4">
+                                        <div Class="input-group col-sm-10">
                                             @foreach (var option in Model.TargetTypeList)
                                             {
                                                 <div class="form-check form-check-inline">
@@ -208,7 +210,7 @@
                                     </div>
                                     <div Class="form-group row">
                                         <label for="inputExperience" class="col-sm-2 col-form-label">Target Calculated Type</label>
-                                        <div Class="col-sm-4">
+                                        <div Class="col-sm-10">
                                             @foreach (var option in Model.TargetCalculatedTypeList)
                                             {
                                                 <div class="form-check form-check-inline">
@@ -243,9 +245,7 @@
                                             @Html.EditorFor(model => model.CRMUserMaster.StartAccrualFromDate, new { htmlAttributes = new { @class = "form-control form-control-border", @type = "date", @Value = Model.CRMUserMaster.StartAccrualFromDate.ToString("yyyy-MM-dd") } })
                                             @*@Html.TextBoxFor(Model => Model.CRMUserMaster.StartAccrualFromDate, new { @class = "form-control form-control-border", @type = "date", @value = Model.CRMUserMaster.StartAccrualFromDate.ToString("mm-dd-yyyy") })*@
                                         </div>
-                                    </div>
-
-                                    <div Class="form-group row">
+                                    
                                         <label for="inputExperience" class="col-sm-2 col-form-label">Accrued Amount to Date</label>
                                         <div Class="col-sm-4">
                                             @Html.TextBoxFor(Model => Model.CRMUserMaster.AccruedAmountToDate, new { @class = "form-control form-control-border", @Value = Model.CRMUserMaster.AccruedAmountToDate })
@@ -257,8 +257,7 @@
                                             @*<input type="date" Class="form-control form-control-border" id="inputExperience" placeholder="Paid to Date" />*@
                                             @Html.TextBoxFor(Model => Model.CRMUserMaster.PaidToDate, new { @class = "form-control form-control-border", @placeholder = "Balance", @value = Model.CRMUserMaster.PaidToDate })
                                         </div>
-                                    </div>
-                                    <div Class="form-group row">
+                                    
                                         <label for="inputExperience" class="col-sm-2 col-form-label">Balance</label>
                                         <div Class="col-sm-4">
                                             @Html.TextBoxFor(Model => Model.CRMUserMaster.Balance, new { @class = "form-control form-control-border", @placeholder = "Balance", @value = Model.CRMUserMaster.Balance })
@@ -295,9 +294,16 @@
                     </div>
                     <hr />
                     <div Class="col-sm-12">
-                        @Html.Partial("~/Views/Shared/CommonButtons.cshtml")
-                        @Html.ActionLink("Back to List", "Index", new { CmpyCode = @companyCode, Id = @SectionId, userName = @userName })
-
+                        <div class="row">
+                            <div class="col-md-10">
+                                @Html.ActionLink(" Back to List", "Index", new { CmpyCode = @companyCode, Id = @SectionId, userName = @userName }, new { @class = "btn btn-outline-info fa fa-arrow-left" })
+                            </div>
+                            <div class="col-md-2">
+                                @Html.Partial("~/Views/Shared/CommonButtons.cshtml")
+                            </div>
+                        </div>
+                       
+                       
                     </div>
                 </div>
 
@@ -307,7 +313,46 @@
         </div>
     </div>
 </div>
+<style>
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #17a2b8;
+    border-radius: 0px;
+    border-bottom-style: ridge;
 
+}
+    .nav-pills .nav-link:not(.active):hover {
+    color: #17a2b8;
+    font-size:15px;
+    border-bottom-style:ridge;
+    border-radius:0px;
+}
+    .p-2
+    {
+        padding: 0px !important;
+    }
+    .card-header
+    {
+         border-color: #17a2b8;
+    }
+
+    .col-form-label
+    {
+        
+    font-weight:500!important;
+    font-size: 16px!important;
+    color: #0e0e0e!important;
+    }
+    .form-control
+    {
+        font-weight: 100!important;
+       
+        border-bottom: 1px solid #17a2b8!important;
+    }
+
+
+
+</style>
 
 @*Modal Form*@
 
