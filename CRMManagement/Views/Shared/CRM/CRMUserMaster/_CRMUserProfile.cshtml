@@ -16,7 +16,55 @@
 
 
 }
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    function updateTextView(_obj) {
+        debugger;
+  var num = getNumber(_obj.val());
+  if(num==0){
+    _obj.val('');
+  }else{
+    _obj.val(num.toLocaleString());
+  }
+}
+function getNumber(_str){
+  var arr = _str.split('');
+  var out = new Array();
+  for(var cnt=0;cnt<arr.length;cnt++){
+    if(isNaN(arr[cnt])==false){
+      out.push(arr[cnt]);
+    }
+  }
+  return Number(out.join(''));
+}
+$(document).ready(function () {
+    debugger;
+    $('#CRMUserMaster_TargetValue').on('keyup', function () {
+    updateTextView($(this));
+    });
+    $('#CRMUserMaster_TargetCalculated').on('keyup', function () {
+        updateTextView($(this));
+    });
 
+    $('#CRMUserMaster_AccruedAmountToDate').on('keyup', function () {
+        updateTextView($(this));
+    });
+
+
+    $('#CRMUserMaster_PaidToDate').on('keyup', function () {
+        updateTextView($(this));
+    });
+
+    $('#CRMUserMaster_Balance').on('keyup', function () {
+        updateTextView($(this));
+    });
+
+
+
+    
+    
+});
+</script>
 
 <div class="container-fluid">
     <div class="row">
@@ -296,7 +344,7 @@
                     <div Class="col-sm-12">
                         <div class="row">
                             <div class="col-md-10">
-                                @Html.ActionLink(" Back to List", "Index", new { CmpyCode = @companyCode, Id = @SectionId, userName = @userName }, new { @class = "btn btn-outline-info fa fa-arrow-left" })
+                                @Html.ActionLink(" Back to List", "Index", new { CmpyCode = @companyCode, Id = @SectionId, userName = @userName }, new { @class = "btn btn-outline-info fa fa-arrow-left backlist" })
                             </div>
                             <div class="col-md-2">
                                 @Html.Partial("~/Views/Shared/CommonButtons.cshtml")
@@ -350,7 +398,10 @@
         border-bottom: 1px solid #17a2b8!important;
     }
 
-
+    .backlist
+    {
+        padding: 12px;
+    }
 
 </style>
 
