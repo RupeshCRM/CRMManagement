@@ -6,9 +6,8 @@
     var CompanyCode = ViewBag.CompanyCode;
 
 }
-
 @*<section class="content">*@
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">@*add Rupesh G*@
 <div class="card">
     <div class="card-header">
         <h3 class="card-title">All together</h3>
@@ -26,41 +25,48 @@
                 <i class="fas fa-times"></i>
             </button>
         </div>
-
     </div>
     <div class="container-fluid">
-
         <div class="row">
             @foreach (var item in Model.EzWorkflowMasterList.Where(e => e.isVisible == 1).OrderBy(e => e.Description))
             {
-                <div class="col-lg-3 col-6">
 
-                    <div class="small-box @item.BodyBGColour">
-                        <div class="inner">
-                            <h3>150</h3>
-                            <p>@item.Description</p>
+                @*add Rupesh G start*@
+                <div class="col-md-3">
+                    <div class="card card-stats mb-14 mb-xl-0 @item.BodyBGColour-box">
+                        <div class="card-body ">
+                            <div class="inner-card @item.BodyBGColour-border">
+                                <div class="row">
+                                    <div class="col">
+                                        @*<h5 class="card-title text-uppercase text-muted1 mb-0">@item.Description</h5>*@
+                                        <p>@item.Description</p>
+                                        <span class="h6 font-weight-bold text-muted2 mb-0">150</span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="icon icon-shape @item.BodyBGColour text-white rounded-circle shadow">
+                                            <i class="fa fa-file-text"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="mt-3 mb-0 text-muted text-sm" style="text-align:end">
+                                    <button class="text-primary mr-2" onclick="RefreshDetail('@item.WorkflowCode')" style="border: none;background-color: #fff;">View More &nbsp; <i class="fa fa-arrow-circle-right"></i></button>
+
+                                </p>
+                            </div>
                         </div>
-                        <div class="icon">
-                            <i class="ion ion-bag"></i>
-                        </div>
-                        @*<a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>*@
-                        <button class="small-box-footer" onclick="RefreshDetail('@item.WorkflowCode')">More info <i class="fas fa-arrow-circle-right"></i></button>
                     </div>
                 </div>
+                @*add Rupesh G end*@
             }
-
         </div>
 
-
         <div class="row">
-
             <div class="col-lg-6 connectedSortable card">
                 <input type="text" id="IdCurrentWorkflow" hidden />
                 <div class="card-body" id="partialViewContainer"></div>
             </div>
-
             <section class="col-lg-6 connectedSortable">
-
 
                 <div class="card">
                     <div class="card-header">
@@ -80,19 +86,14 @@
                         </div>
                     </div>
                     <div class="card-body">
-
                         <div class="tab-content p-0">
-
                             <div class="chart tab-pane active" id="revenue-chart">
-
                                 <div class="row">
                                     <div class="col-md-12">
-
                                         <div class="timeline">
                                             <div class="time-label">
                                                 <span class="bg-green">New Activity</span>
                                             </div>
-
 
                                             <div>
                                                 <i class="fas fa-pen bg-green"></i>
@@ -104,17 +105,14 @@
                                                         <textarea id="txtNewActivity" class="border border-success" style="width:100%;border:0.1px;"></textarea>
                                                     </div>
                                                     <div class="timeline-footer">
-
                                                         <a class="btn btn-success  btn-sm" onclick="SubmitFormSave('Activity')"><i class="fas fa-save"></i> Save</a>
                                                         <a class="btn btn-info btn-sm">Clear</a>
                                                     </div>
                                                 </div>
                                             </div>
-
                                             <div class="time-label">
                                                 <span class="bg-red">10 Feb. 2014</span>
                                             </div>
-
 
                                             <div>
                                                 <i class="fas fa-envelope bg-blue"></i>
@@ -134,7 +132,6 @@
                                                 </div>
                                             </div>
 
-
                                             <div>
                                                 <i class="fas fa-user bg-green"></i>
                                                 <div class="timeline-item">
@@ -142,7 +139,6 @@
                                                     <h3 class="timeline-header no-border"><a href="#">Sarah Young</a> accepted your friend request</h3>
                                                 </div>
                                             </div>
-
 
                                             <div>
                                                 <i class="fas fa-comments bg-yellow"></i>
@@ -160,13 +156,9 @@
                                                 </div>
                                             </div>
 
-
                                             <div class="time-label">
                                                 <span class="bg-green">3 Jan. 2014</span>
                                             </div>
-
-
-
 
 
 
@@ -175,18 +167,15 @@
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                             <div class="chart tab-pane" id="sales-chart" style="position: relative; height: auto;">
                                 <div class="row">
                                     <div class="col-md-12">
-
                                         <div class="timeline">
                                             <div class="time-label">
                                                 <span class="bg-green">New Task</span>
                                             </div>
-
 
                                             <div>
                                                 <i class="fas fa-pen bg-green"></i>
@@ -197,17 +186,14 @@
                                                         <textarea id="txtNewTask" class="border border-success" style="width:100%;border:0.1px;"></textarea>
                                                     </div>
                                                     <div class="timeline-footer">
-
                                                         <a class="btn btn-success  btn-sm" onclick="SubmitFormSave('Task')"><i class="fas fa-save"></i> Save</a>
                                                         <a class="btn btn-info btn-sm">Clear</a>
                                                     </div>
                                                 </div>
                                             </div>
-
                                             <div class="time-label">
                                                 <span class="bg-red">10 Feb. 2014</span>
                                             </div>
-
 
                                             <div>
                                                 <i class="fas fa-envelope bg-blue"></i>
@@ -227,7 +213,6 @@
                                                 </div>
                                             </div>
 
-
                                             <div>
                                                 <i class="fas fa-user bg-green"></i>
                                                 <div class="timeline-item">
@@ -235,7 +220,6 @@
                                                     <h3 class="timeline-header no-border"><a href="#">Sarah Young</a> accepted your friend request</h3>
                                                 </div>
                                             </div>
-
 
                                             <div>
                                                 <i class="fas fa-comments bg-yellow"></i>
@@ -253,11 +237,9 @@
                                                 </div>
                                             </div>
 
-
                                             <div class="time-label">
                                                 <span class="bg-green">3 Jan. 2014</span>
                                             </div>
-
 
                                             <div>
                                                 <i class="fa fa-camera bg-purple"></i>
@@ -265,12 +247,9 @@
                                                     <span class="time"><i class="fas fa-clock"></i> 2 days ago</span>
                                                     <h3 class="timeline-header"><a href="#">Mina Lee</a> uploaded new photos</h3>
                                                     <div class="timeline-body">
-
                                                     </div>
                                                 </div>
                                             </div>
-
-
 
 
                                             <div>
@@ -278,21 +257,455 @@
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-
             </section>
-
         </div>
-
     </div>
     @*</section>*@
-
 </div>
 <script src="~/Content/plugins/jquery/jquery.min.js"></script>
 <script src="~/Scripts/CustomScript/LandingPage/RefreshDetailJS.js?v=timestamp"></script>
+
+@*add Rupesh G start*@
+<style>
+       
+        button:focus {
+            outline: 1px dotted;
+            outline: 5px auto -webkit-focus-ring-color;
+        }
+
+    input,
+    button {
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        margin: 0;
+    }
+
+    button,
+    input {
+        overflow: visible;
+    }
+
+    button {
+        text-transform: none;
+    }
+
+    
+
+  
+
+ 
+
+    .container-fluid {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .row {
+        display: flex;
+        margin-right: -15px;
+        margin-left: -15px;
+        flex-wrap: wrap;
+    }
+
+    .col,
+    .col-auto,
+    .col-lg-6,
+    .col-xl-3,
+    .col-xl-6 {
+        position: relative;
+        width: 100%;
+        min-height: 90px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .col {
+        max-width: 100%;
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+
+    .col-auto {
+        width: auto;
+        max-width: none;
+        flex: 0 0 auto;
+    }
+
+
+
+
+
+    .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        border: 1px solid rgba(0, 0, 0, .05);
+        border-radius: 15px !important;
+        background-color: #fff;
+        background-clip: border-box;
+        -webkit-box-shadow: 0 8px 6px -6px black;
+        -moz-box-shadow: 0 8px 6px -6px black;
+        box-shadow: 0 8px 6px -6px black;
+    }
+
+    .card-body {
+        padding: 1.5rem;
+        flex: 1 1 auto;
+    }
+
+    .card-title {
+        margin-bottom: 1.25rem;
+    }
+
+
+    .bg-info {
+        background-color: #11cdef !important;
+    }
+
+    .bg-info-border {
+        border-color: #11cdef !important;
+    }
+
+ 
+
+    .bg-warning {
+        background-color: #fb6340 !important;
+    }
+
+    .bg-warning-border {
+        border-color: #fb6340 !important;
+    }
+
+
+    .bg-danger {
+        background-color: #f5365c !important;
+    }
+
+    .bg-danger-border {
+        border-color: #f5365c !important;
+    }
+
+    a.bg-danger:hover,
+    a.bg-danger:focus,
+    button.bg-danger:hover,
+    button.bg-danger:focus {
+        background-color: #ec0c38 !important;
+    }
+
+    .bg-default {
+        background-color: #172b4d !important;
+    }
+
+    .bg-default-border {
+        border-color: #172b4d !important;
+    }
+
+    .bg-blue-border {
+        border-color: #007bff !important;
+    }
+
+    .bg-success-border {
+        border-color: #28a745 !important;
+    }
+
+    .bg-dark-border {
+        border-color: #343a40 !important;
+    }
+
+
+    .inner-card {
+        border-left: 3px solid;
+        padding-left: 20px;
+        border-radius: 10px;
+    }
+
+    .bg-border-pink {
+        border-color: #fd3870 !important;
+    }
+
+    .bg-border-blue {
+        border-color: #404fa1 !important;
+    }
+
+    .bg-border-yellow {
+        border-color: orange !important;
+    }
+    /* fd600 */
+
+
+
+    
+    .rounded-circle {
+        border-radius: 50% !important;
+    }
+
+    .align-items-center {
+        align-items: center !important;
+    }
+
+    .shadow {
+        box-shadow: 0 0 2rem 0 rgba(136, 152, 170, .15) !important;
+    }
+
+    .mb-0 {
+        margin-bottom: 0 !important;
+    }
+
+    .mr-2 {
+        margin-right: .5rem !important;
+    }
+
+    .mt-3 {
+        margin-top: 1rem !important;
+    }
+
+    .mb-4 {
+        margin-bottom: 1.5rem !important;
+    }
+
+    .mb-14 {
+        margin-bottom: 0.75rem !important;
+    }
+
+    .mb-5 {
+        margin-bottom: 3rem !important;
+    }
+
+    .pt-5 {
+        padding-top: 3rem !important;
+    }
+
+    .pb-8 {
+        padding-bottom: 0rem !important;
+    }
+
+    .m-auto {
+        margin: auto !important;
+    }
+
+
+
+    .text-nowrap {
+        white-space: nowrap !important;
+    }
+
+    .text-center {
+        text-align: center !important;
+    }
+
+    .text-uppercase {
+        text-transform: uppercase !important;
+    }
+
+    .font-weight-bold {
+        font-weight: 600 !important;
+    }
+
+    .text-white {
+        color: #fff !important;
+    }
+
+    .text-success {
+        color: #2dce89 !important;
+    }
+
+    .text-primary {
+        color: #2b23a3 !important;
+    }
+
+    a.text-success:hover,
+    a.text-success:focus {
+        color: #24a46d !important;
+    }
+
+    .text-warning {
+        color: #fb6340 !important;
+    }
+
+    a.text-warning:hover,
+    a.text-warning:focus {
+        color: #fa3a0e !important;
+    }
+
+    .text-danger {
+        color: #f5365c !important;
+    }
+
+    a.text-danger:hover,
+    a.text-danger:focus {
+        color: #ec0c38 !important;
+    }
+
+    .text-white {
+        color: #fff !important;
+    }
+
+    a.text-white:hover,
+    a.text-white:focus {
+        color: #e6e6e6 !important;
+    }
+
+    .text-muted {
+        color: #8898aa !important;
+    }
+
+    .text-muted1 {
+        color: #0f0f0f !important;
+    }
+
+    .text-muted2 {
+        color: #404fa1 !important;
+    }
+
+
+
+    figcaption,
+    main {
+        display: block;
+    }
+
+    main {
+        overflow: hidden;
+    }
+
+    .bg-yellow {
+        background-color: #ffd600 !important;
+    }
+
+    a.bg-yellow:hover,
+    a.bg-yellow:focus,
+    button.bg-yellow:hover,
+    button.bg-yellow:focus {
+        background-color: #ccab00 !important;
+    }
+
+    .bg-gradient-primary {
+        /* background:linear-gradient(87deg, #dededf 0, #cdcdcf 100%) !important;   */
+        /* background:linear-gradient(110deg,#027e78 10%, #20B2AA 70%, #027e78 90%);  */
+        /* background: linear-gradient(87deg, #5e72e4 0, #825ee4 100%) !important;  */
+        padding-top: 0.75rem;
+    }
+
+    .bg-gradient-primary {
+        /* background:linear-gradient(87deg, #092ae4 0, #29292b 100%) !important;  */
+        /* background:linear-gradient(110deg,#027e78 10%, #20B2AA 70%, #027e78 90%); */
+        /* background: linear-gradient(87deg, #5e72e4 0, #825ee4 100%) !important;  */
+        padding-top: 0.75rem;
+    }
+
+
+
+
+    [class*='shadow'] {
+        transition: all .15s ease;
+    }
+
+    .text-sm {
+        font-size: .875rem !important;
+    }
+
+    .text-white {
+        color: #fff !important;
+    }
+
+    a.text-white:hover,
+    a.text-white:focus {
+        color: #e6e6e6 !important;
+    }
+
+    [class*='btn-outline-'] {
+        border-width: 1px;
+    }
+
+    .card-stats .card-body {
+        padding: 1rem 1.5rem;
+    }
+
+    .main-content {
+        position: relative;
+    }
+
+
+
+    .footer {
+        padding: 2.5rem 0;
+        background: #f7fafc;
+    }
+
+        .footer .copyright {
+            font-size: .875rem;
+        }
+
+    .header {
+        position: relative;
+    }
+
+    .icon {
+        width: 3rem;
+        height: 3rem;
+    }
+
+        .icon i {
+            font-size: 2.25rem;
+        }
+
+    .icon-shape {
+        display: inline-flex;
+        padding: 12px;
+        text-align: center;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .icon-shape i {
+            font-size: 1.25rem;
+        }
+
+    button {
+        overflow: visible;
+        width: auto;
+    }
+
+    .text-list {
+        font-size: small;
+    }
+
+
+    .bg-info-box {
+        box-shadow: 0 8px 6px -6px #11cdef !important;
+    }
+
+    .bg-danger-box {
+        box-shadow: 0 8px 6px -6px #dc3545 !important;
+    }
+
+    .bg-warning-box {
+        box-shadow: 0 8px 6px -6px #fb6340 !important;
+    }
+
+    .bg-blue-box {
+        box-shadow: 0 8px 6px -6px #007bff !important;
+    }
+     .bg-success-box {
+        box-shadow: 0 8px 6px -6px #28a745 !important;
+    }
+      .bg-dark-box {
+        box-shadow: 0 8px 6px -6px #343a40 !important;
+    }
+     
+</style>
+
+@*add Rupesh G end*@
