@@ -8,6 +8,17 @@
 }
 @*<section class="content">*@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">@*add Rupesh G*@
+
+
+    
+    <link href="~/Scripts/Calender/theme.css" rel="stylesheet" />
+    <link href="~/Scripts/fullcalendar/fullcalendar.css" rel="stylesheet" />
+    <link href="~/Scripts/fullcalendar/fullcalendar.print.css" rel="stylesheet" media="print" />
+<link href="http://code.jquery.com/ui/1.8.21/themes/base/jquery-ui.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+
+
 <div class="card">
     <div class="card-header">
         <h3 class="card-title">All together</h3>
@@ -87,8 +98,27 @@
                         </div>
                       
                     </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                               
+                                <div class="modal-body">
+                                    <div id="calendar"></div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-lg-12" style="border-bottom-style:solid;border-bottom-width:thin;border-color:#e6e6e6;padding:10px;display: flex; justify-content: flex-end">
                         <div class="">
+                            <div id="btncalc" class="icon icon-shape text-white bg-success rounded-circle shadow imgshadow" title="whatsapp" data-toggle="modal" data-target="#myModal" >
+                                <i class="fa fa-regular fa-calendar"></i>
+                            </div>
+
                             <div class="icon icon-shape text-white bg-success rounded-circle shadow imgshadow" title="whatsapp">
                                 <i class="fa fa-brands fa-whatsapp" ></i>
                             </div>
@@ -109,7 +139,7 @@
                             <div class="icon icon-shape text-white bg-default rounded-circle shadow imgshadow" title="Message">
                                 <i class="fa fa-sharp fa-light fa-comment"></i>
                             </div>
-
+                            
                           
                         </div>
                     </div>
@@ -736,6 +766,59 @@
      .imgshadow:hover {
   box-shadow: 0px 4px 4px black!important;
 }
+     .fc-header .fc-button {
+    margin-right: -1px;
+    color: black;
+    text-transform: capitalize;
+    font-weight: lighter;
+}
 </style>
+
+<script>
+    calenderdata = "";
+</script>
+<script>
+        @if ((TempData["ConfirmMessage"] != null))
+        {
+            <text>trctSuccessAlert("@TempData["ConfirmMessage"]")</text>
+        }
+        @if ((TempData["ErrorMessage"] != null))
+        {
+            <text>trctErrorAlert("@TempData["ErrorMessage"]")  </text>
+        }
+        
+</script>
+
+<script src="~/Scripts/Calender/jquery-1.8.3.js"></script>
+<script src="~/Scripts/fullcalendar/fullcalendar.min.js"></script>
+
+<script>
+    debugger;
+    var calenderdata;
+    
+    calenderdata = [{"EventID":0,"EventName":null,"EventStartDate":"0001-01-01T00:00:00","EventEndDate":"0001-01-01T00:00:00","Recurring":null,"RecursiveSelected":false,"Sunday":false,"Monday":false,"Tuesday":false,"Wednesday":false,"Thursday":false,"Friday":false,"Saturday":false,"DailyFrequency":null,"MonthDay":null,"MonthlyFrequency":null,"YearDate":null,"YearMonth":null,"YearlyFrequency":null,"Description":null,"Ppr":null,"CreatedBy":null,"CreatedDate":null,"Modifiedby":null,"ModifiedDate":null,"IsActive":null,"EventTypeID":null,"AssetId":null,"AssetCode":null,"id":1,"title":"Test 1","start":"2024-04-20T00:00:00","end":"2024-04-23T00:00:00","CompanyId":0}];
+    
+</script>
+<script>
+    var date = new Date();
+    var d = date.getDate();
+    var m = date.getMonth();
+    var y = date.getFullYear();
+    $('#calendar').fullCalendar({
+        theme: true,
+        header: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'month,agendaWeek,agendaDay'
+        },
+        editable: false,
+        events: calenderdata,
+      
+        color: 'yellow',
+        textColor: 'black'
+    });
+      
+     
+</script>
 
 @*add Rupesh G end*@
